@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+   
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="style.css">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<STYLE>
+
+  body{background-color: rgb(245, 245, 245); padding:0px;margin:0px}
+  .grid-item { width:32%;padding:1% }
+  .grid-item img{width: 100%; }
+
+  @media(max-width:768px){
+    .grid-item { width: 50%; }
+  }
+</STYLE>
+
+</head>
+  </head>
+  <body>
+    
+ 
+
+ <div style=" margin-top: 1%;" class="grid marginyuzde3">
+   <a href="reklamcalismalari.html"><div class="grid-item hovereffect">
+     <img src="img/anasayfa/SentosPlusİndirimi.jpg" alt=""> 
+     <div style="color: rgb(0, 0, 0);" class="grid-item-overlay">Reklam Çalışmaları</div>
+  </div></a>
+   <a href="ambalajcalismalari.html"> <div class="grid-item hovereffect">
+    <img src="img/anasayfa/loadbar.png" alt=""> 
+    <div style="color: rgb(0, 0, 0);" class="grid-item-overlay">Ambalaj Çalışmaları</div>
+ </div></a>
+ <a href="fotografcalismaları.html"> <div class="grid-item hovereffect">
+    <img src="img/anasayfa/saat.png" alt=""> 
+    <div style="color: rgb(0, 0, 0);" class="grid-item-overlay">Fotoğraf Çekimleri </div>
+ </div></a>
+ <div class="grid-item hovereffect">
+  <img src="img/anasayfa/airist.png" alt=""> 
+  <div style="color: rgb(0, 0, 0);" class="grid-item-overlay">Logo Çalışmaları</div>
+</div>
+
+<div class="grid-item hovereffect">
+  <img src="img/anasayfa/29ekim.png" alt=""> 
+  <div style="color: rgb(0, 0, 0);" class="grid-item-overlay">Sosyal MedyaÇalışmaları</div>
+</div>
+<div class="grid-item hovereffect">
+  <img src="img/anasayfa/motiongif.gif" alt=""> 
+  <div style="color: rgb(0, 0, 0);" class="grid-item-overlay">Hareketli Çalışmalar </div>
+</div>
+<div class="grid-item hovereffect">
+  <img src="img/anasayfa/diger.png" alt=""> 
+</div>
+</div>
+  <!-- hoversiz..
+      <div class="grid-item"><img class="hovereffect" src="img/anasayfa/sentosplusindirimi.jpg" alt=""></div>
+  <div class="grid-item"><img class="hovereffect" src="img/anasayfa/loadbar.png" alt=""></div>
+  <div class="grid-item"><img class="hovereffect" src="img/anasayfa/saat.png" alt=""></div>
+  <div class="grid-item"><img class="hovereffect" src="img/anasayfa/airist.png" alt=""></div>
+  <div class="grid-item"><img class="hovereffect" src="img/anasayfa/bikoengelsiz.png" alt=""></div>
+  <div class="grid-item"><img class="hovereffect" src="img/anasayfa/29ekim.png" alt=""></div>
+  <div class="grid-item"><img class="hovereffect" src="img/anasayfa/motiongif.gif" alt=""></div>
+  <div class="grid-item"><img class="hovereffect" src="img/anasayfa/diger.png" alt=""></div>
+</div>
+-->
+
+    <!-- FOOTER BY OFE -->
+  <div class="footeranasayfa">
+    <div style="margin-top: 15px; text-align: center; flex-wrap: wrap; width:max-content; margin-left: auto; margin-right: auto; max-width: 100%;">
+     <div style="padding-right: 30px; padding-left: 30px;">
+        <a class="footeraktif" href="anasayfa.html">ana sayfa</a>
+        <a class="footer" href="reklamcalismalari.html"> reklam çalışmaları </a>
+        <a class="footer" href="fotografcalismaları.html">fotoğraf çalışmaları</a>
+        <a class="footer" href="">logo çalışmaları</a>
+        <a class="footer" href="">ambalaj çalışmaları</a>
+        <a class="footer" href="">sosyal medya çalışmaları</a>
+        <a class="footer" href="">baskılı çalışmalar</a>
+        <a class="footer" href="">diğer</a>
+    </div>
+    <div style=" text-decoration: underline; margin-top: 1%; margin-bottom: 2%; text-align:center;width:100%;">
+      <a class="footeraktif"  href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+  
+  <script src="js/jquery.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="js/masonry.pkgd.min.js" ></script>
+  <script>
+    $(document).ready(function(){
+        $('.grid').masonry({
+          // options
+          itemSelector: '.grid-item'
+        });
+    })
+  </script>
+  </body>
+</html>
