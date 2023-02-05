@@ -153,3 +153,8 @@ a.footer:visited {
     transform: scale(1.03);
   }
   
+.tümhaklar{
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    font-size:78%;
+}
