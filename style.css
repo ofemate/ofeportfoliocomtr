@@ -50,6 +50,9 @@ a.footer:visited {
 @media only screen and (min-width: 768px) {
     .marginyuzde3 {margin-left: 3%;}
 }
+@media only screen and (max-width: 768px) {
+    .marginyuzde3 {margin-left: 6%;}
+}
 
 
 
@@ -132,7 +135,7 @@ a.footer:visited {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(245, 245, 245, 0.774);
+        background-color: rgba(245, 245, 245, 0.913);
         font-family: 'montserrat', sans-serif;
         letter-spacing: 1px;
         opacity: 1;
@@ -140,8 +143,8 @@ a.footer:visited {
         height: 30px;
         width: 100%;
         text-align: center;
-        font-size: x-small;
-        font-weight: 400;
+        font-size: small;
+        font-weight: 500;
         }
 }
 
