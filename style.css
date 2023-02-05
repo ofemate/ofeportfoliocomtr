@@ -157,4 +157,9 @@ a.footer:visited {
     text-align: center;
     font-family: 'montserrat', sans-serif;
     font-size:78%;
+    text-decoration: none;
+}
+
+.tümhaklarcontact{
+    margin-top: 23px;
 }
