@@ -54,6 +54,13 @@ a.footer:visited {
     .marginyuzde3 {margin-left: 0%;}
 }
 
+@media only screen and (min-width: 768px) {
+  .marginyuzde3anasayfa {margin-left: 3%;}
+}
+@media only screen and (max-width: 768px) {
+  .marginyuzde3anasayfa {margin-left: 2%;}
+}
+
 
 
 .kategoribaslikdegisken {
