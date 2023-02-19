@@ -229,3 +229,27 @@ a.footer:visited {
 }
 
       
+
+.svg-half {
+  position: relative;
+}
+.svg-half img {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+.svg-half svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 75px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  overflow: visible;
+  stroke: #470098;
+  stroke-width: 6;
+  transform: rotate(90deg);
+  stroke: url(#gradiant);
+}
