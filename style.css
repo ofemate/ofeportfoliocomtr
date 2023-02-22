@@ -110,6 +110,11 @@ a.footer:visited {
     position: relative;
     }
 
+.grid-item5 {
+      position: relative;
+      }
+
+      
 @media only screen and (min-width:992px) {
     .grid-item-overlay {
         position: absolute;
@@ -252,4 +257,16 @@ a.footer:visited {
   stroke-width: 6;
   transform: rotate(90deg);
   stroke: url(#gradiant);
+}
+
+@media only screen and (max-width: 768px) {
+  .mobilyok {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobilvar {
+    display: none;
+  }
 }

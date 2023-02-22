@@ -22,6 +22,15 @@
   @media(max-width:768px){
     .grid-item { width: 50%; }
   }
+
+
+  body{background-color: rgb(238, 238, 238); padding:0px;margin:0px}
+  .grid-item5 { margin-left: 0.20%; width:19%;padding:1% }
+  .grid-item5 img{width: 100%; }
+
+  @media(max-width:768px){
+    .grid-item5 { width: 50%; }
+  }
 </STYLE>
 
 </head>
@@ -99,12 +108,57 @@
 
 
 
-    <!-- Görseller -->
- <div style="margin-top: 4%;" class="grid marginyuzde3">
-  <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/petosagan.webp"></div>
+<div class="mt-5 container alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>DİKKAT!</strong> Bu kategori DENEME amaçlı açılmıştır. Çalışmalar ÖRNEKTİR.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 
+    <!-- Görseller -->
+
+    <div style="margin-top: 4%;" class="grid marginyuzde3">
+      <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></div>
+      <div class="grid-item hovercalismalar"><img src="img/diger/petosagan.webp"></div>
+      <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></div>
+      <div class="grid-item hovercalismalar mobilvar"><img src="img/diger/Jameshetfield.webp"></div>
+
+    </div>
+
+
+<div class="grid5 marginyuzde3">
+  <div class="grid-item5 hovercalismalar mobilyok"><img src="img/diger/ashmedkatalog1.webp" ></div>
+  <div class="grid-item5 hovercalismalar mobilyok"><img src="img/diger/ashmedkatalog2.webp" ></div>
+  <div class="grid-item5 hovercalismalar mobilyok"><img src="img/diger/ashmedkatalog3.webp" ></div>
+  <div class="grid-item5 hovercalismalar mobilyok"><img src="img/diger/ashmedkatalog4.webp" ></div>
+  <div class="grid-item5 hovercalismalar mobilyok"><img src="img/diger/ashmedkatalog5.webp" ></div>
+</div>
+
+<div class="grid marginyuzde3">
+ <div class="grid-item hovercalismalar mobilvar"><img src="img/diger/ashmedkatalog1.webp" ></div>
+ <div class="grid-item hovercalismalar mobilvar"><img src="img/diger/ashmedkatalog3.webp" ></div>
+ <div class="grid-item hovercalismalar mobilvar"><img src="img/diger/ashmedkatalog4.webp" ></div>
+ <div class="grid-item hovercalismalar mobilvar"><img src="img/diger/ashmedkatalog5.webp" ></div>
+</div>
+
+<div class="grid marginyuzde3">
+  <div class="grid-item hovercalismalar mobilyok"><img src="img/diger/Jameshetfield.webp"></div>
+  <div class="grid-item hovercalismalar"><img src="img/anasayfa/diger.webp"></div>
+  <div class="grid-item hovercalismalar"><img src="img/reklamcalismalari/babygrossonlineozel.png"></div>
+  <div class="grid-item hovercalismalar"><img src="img/reklamcalismalari/interkan marketkargo500.png"></div>
+  <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></div>
+  <div class="grid-item hovercalismalar"><img src="img/reklamcalismalari/wejaarcalvincklein.png"></div>
+  <div class="grid-item hovercalismalar"><img src="img/reklamcalismalari/yondererkenkayit.png"></div>
+  <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></div>
+  <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></div>
+  <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></div>
+  <div class="grid-item hovercalismalar"><img src="img/reklamcalismalari/babygrossonlineozel.png"></div>
+  <div class="grid-item hovercalismalar"><img src="img/reklamcalismalari/wejaarnike.png"></div>
+  <div class="grid-item hovercalismalar"><img src="img/reklamcalismalari/nefiseaksesuar.png"></div>
+  <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/CAF.webp"></div>
+  <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></div>
+  <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></div>
+
+
+</div>
 
     <!-- FOOTER BY OFE -->
    <div style="margin-top: 15px; text-align: center; flex-wrap: wrap; width:max-content; margin-left: auto; margin-right: auto; max-width: 100%;">
@@ -135,6 +189,14 @@
         $('.grid').masonry({
           // options
           itemSelector: '.grid-item'
+        });
+    })
+
+
+    $(window).load(function(){
+        $('.grid5').masonry({
+          // options
+          itemSelector: '.grid-item5'
         });
     })
   </script>
