@@ -24,6 +24,13 @@
   @media(max-width:768px){
     .grid-item { width: 50%; }
   }
+
+  .grid-item5 { margin-left: 0.20%; width:19%;padding:1% }
+  .grid-item5 img{width: 100%; }
+
+  @media(max-width:768px){
+    .grid-item5 { width: 50%; }
+  }
 </STYLE>
 
 </head>
@@ -102,16 +109,36 @@
 
  <div style="margin-top: 4%;" class="grid marginyuzde3">
   <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/ifco.webp" alt=""></div>
-  <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/youtube---Kopya.webp" alt=""></div>
-  <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/bikoengelsizstory.webp" alt=""></div>
+  <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/youtubetogg.webp" alt=""></div>
+  <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/trendyoltogg.webp" alt=""></div>
   <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/tirilyedensenlik.webp" alt=""></div>
-  <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/trendyol---Kopya.webp" alt=""></div>
   <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/Comio-İlan-Grafik-Tasarımcı-İlan---Kopya.webp" alt=""></div>
   <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/hijyen-günü.webp" alt=""></div>
+</div>
+
+<div class="grid5 marginyuzde3">
+  <div class="grid-item5 hovercalismalar mobilyok"><img src="img/sosyalmedya/depremsırasında1.webp" ></div>
+  <div class="grid-item5 hovercalismalar mobilyok"><img src="img/sosyalmedya/depremsırasında2.webp" ></div>
+  <div class="grid-item5 hovercalismalar mobilyok"><img src="img/sosyalmedya/depremsırasında3.webp" ></div>
+  <div class="grid-item5 hovercalismalar mobilyok"><img src="img/sosyalmedya/depremsırasında4.webp" ></div>
+  <div class="grid-item5 hovercalismalar mobilyok"><img src="img/sosyalmedya/depremsırasında5.webp" ></div>
+</div>
+
+<div class="grid marginyuzde3">
+ <div class="grid-item hovercalismalar mobilvar"><img src="img/sosyalmedya/depremsırasında1mobil.webp" ></div>
+ <div class="grid-item hovercalismalar mobilvar"><img src="img/sosyalmedya/depremsırasında3.webp" ></div>
+ <div class="grid-item hovercalismalar mobilvar"><img src="img/sosyalmedya/depremsırasında4.webp" ></div>
+ <div class="grid-item hovercalismalar mobilvar"><img src="img/sosyalmedya/depremsırasında2.webp" ></div>
+</div>
+
+<div class="grid marginyuzde3">
   <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/makine-bakım-onarımcısı.webp" alt=""></div>
   <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/Okulistik-ortaokul.webp" alt=""></div>
   <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/Only-Evo-Beyond-Renkli-Tuvalet-Kağıdı-siyah.webp" alt=""></div>
   <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/Rapor-Sonucu-erken-hasat-1.webp" alt=""></div>
+  <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/nefisekadinlargunu.webp" alt=""></div>
+  <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/bikoengelsizstory.webp" alt=""></div>
+  <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/babygrossankaracokyakinda.webp" alt=""></div>
   <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/Rapor-Sonucu-erken-hasat-2.webp" alt=""></div>
   <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/11eylulbursa copy.webp" alt=""></div>
   <div class="grid-item hovercalismalar"><img src="img/sosyalmedya/CAF.webp" alt=""></div>
@@ -153,6 +180,13 @@
         $('.grid').masonry({
           // options
           itemSelector: '.grid-item'
+        });
+    })
+
+    $(window).load(function(){
+        $('.grid5').masonry({
+          // options
+          itemSelector: '.grid-item5'
         });
     })
   </script>

@@ -78,6 +78,23 @@ a.footer:visited {
     .kategoribaslikdegisken {font-size:larger; }
   }
 
+
+  .kategoribaslikdegiskenhakkimda {
+    color:rgb(0, 0, 0);
+    padding-top:20%;
+    margin-left: 12%;
+    font-family:'montserrat', sans-serif;
+    letter-spacing: 5px;
+  }
+ 
+  @media only screen and (max-width: 768px) {
+    .kategoribaslikdegiskenhakkimda {font-size:small; }
+  }
+  @media only screen and (min-width: 768px) {
+    .kategoribaslikdegiskenhakkimda {font-size:larger; }
+  }
+
+
 .mail{
     text-align: center;
     font-family: 'montserrat', sans-serif;
