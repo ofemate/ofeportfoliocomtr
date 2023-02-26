@@ -24,18 +24,25 @@
     .grid-item { width: 50%; }
   }
 
-  .grid-item5 { margin-left: 0.20%; width:19%;padding:1% }
+  .grid-item5 {width:19.25%;padding:1% }
   .grid-item5 img{width: 100%; }
 
   @media(max-width:768px){
     .grid-item5 { width: 50%; }
   }
 
-  .grid-item4 { margin-left: 0.20%; width:23.8%;padding:1% }
+  .grid-item4 {width:24%;padding:1% }
   .grid-item4 img{width: 100%; }
 
   @media(max-width:768px){
     .grid-item4 { width: 50%; }
+  }
+
+  .grid-item1 { margin-left: 0.20%; width:96%;padding:1% }
+  .grid-item1 img{width: 100%; }
+
+  @media(max-width:768px){
+    .grid-item1 { width: 100%; }
   }
 </STYLE>
 
@@ -122,11 +129,8 @@
 
     <!-- Görseller -->
 
-    <div style="margin-top: 2%;" class="grid marginyuzde3">
-      <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></div>
-      <div class="grid-item hovercalismalar"><img src="img/diger/petosagan.webp"></div>
-      <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></div>
-      <div class="grid-item hovercalismalar mobilvar"><img src="img/diger/Jameshetfield.webp"></div>
+    <div class="grid1 marginyuzde3">
+      <div class="grid-item1 hovercalismalar"><img src="img/diger/LoadBehance.png" ></div>
     </div>
 
 
@@ -146,20 +150,18 @@
 </div>
 
 <div class="grid4 marginyuzde3">
-  <div class="grid-item4 hovercalismalar mobilyok"><img src="img/diger/ashmedkartviziton.webp" ></div>
-  <div class="grid-item4 hovercalismalar mobilyok"><img src="img/diger/ashmedkartvizitarka.webp" ></div>
-  <div class="grid-item4 hovercalismalar mobilyok"><img src="img/diger/ashmedkartviziton.webp" ></div>
-  <div class="grid-item4 hovercalismalar mobilyok"><img src="img/diger/ashmedkartvizitarka.webp" ></div>
+  <div class="grid-item4 hovercalismalar"><img src="img/diger/ashmedkartviziton.webp" ></div>
+  <div class="grid-item4 hovercalismalar"><img src="img/diger/ashmedkartvizitarka.webp" ></div>
+  <div class="grid-item4 hovercalismalar"><img src="img/diger/Jameshetfield.webp" ></div>
+  <div class="grid-item4 hovercalismalar"><img src="img/diger/petosagan.webp" ></div>
+  <div class="grid-item4 hovercalismalar"><img src="img/diger/kadının-namusuna-giydiği-kıyafet-karar-vermez.webp" ></div>
+  <div class="grid-item4 hovercalismalar"><img src="img/diger/Ona-fikrini-sordun-mu.webp" ></div>
 </div>
 
-<div class="grid marginyuzde3">
-  <div class="grid-item hovercalismalar mobilvar"><img src="img/diger/ashmedkartviziton.webp" ></div>
-  <div class="grid-item hovercalismalar mobilvar"><img src="img/diger/ashmedkartvizitarka.webp" ></div>
-  <div class="grid-item hovercalismalar mobilvar"><img src="img/diger/ashmedkartviziton.webp" ></div>
-  <div class="grid-item hovercalismalar mobilvar"><img src="img/diger/ashmedkartvizitarka.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/ashmedmailimza.webp" ></div>
+<!--
+<div class="grid-item4 hovercalismalar"><img src="img/diger/ashmedmailimza.webp" ></div>
+-->
 
-</div>
 
 
     <!-- FOOTER BY OFE -->
@@ -205,6 +207,13 @@
         $('.grid4').masonry({
           // options
           itemSelector: '.grid-item4'
+        });
+    })
+
+    $(window).load(function(){
+        $('.grid1').masonry({
+          // options
+          itemSelector: '.grid-item1'
         });
     })
   </script>
