@@ -3,3 +3,4 @@ document.addEventListener('click', function(event) {
         history.back();
     }
 });
+
