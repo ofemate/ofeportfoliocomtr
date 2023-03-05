@@ -332,6 +332,7 @@ a.footer:visited {
   transform: translate(-50%, -50%);
   max-width: 90%;
   max-height: 90%;
+  
 }
 
 .fotobuyutucu:target {
@@ -339,16 +340,8 @@ a.footer:visited {
   pointer-events: auto;
 }
 
-.close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 3rem;
-  text-decoration: none;
-  color: #fff;
-  font-family: sans-serif;
-}
+.scrollengel{
+  overflow-y: hidden;
+  height: 100vh;
 
-.close:hover {
-  color: #ccc;
 }
