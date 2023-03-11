@@ -296,21 +296,6 @@ a.footer:visited {
 
 
 
-
-
-
-
-
-
-
-
-
-/* Masonry layout */
-.fotobutucumasonry {
-  column-count: 3;
-  column-gap: 1em;
-}
-
 /* Overlay styles */
 .fotobuyutucu {
   position: fixed;
@@ -319,7 +304,7 @@ a.footer:visited {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease-in-out;
@@ -332,16 +317,9 @@ a.footer:visited {
   transform: translate(-50%, -50%);
   max-width: 90%;
   max-height: 90%;
-  
 }
 
 .fotobuyutucu:target {
   opacity: 1;
   pointer-events: auto;
-}
-
-.scrollengel{
-  overflow-y: hidden;
-  height: 100vh;
-
 }
