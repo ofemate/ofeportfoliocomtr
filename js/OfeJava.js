@@ -4,3 +4,6 @@ document.addEventListener('click', function(event) {
     }
 });
 
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+});
