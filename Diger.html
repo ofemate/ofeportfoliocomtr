@@ -7,6 +7,8 @@
    
     <title>OfeReklam</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/OfeJava.js"></script>
+
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,27 +23,6 @@
 
   @media(max-width:768px){
     .grid-item { width: 50%; padding:1%}
-  }
-
-  .grid-item5 {width:19.25%;padding:1% }
-  .grid-item5 img{width: 100%; }
-
-  @media(max-width:768px){
-    .grid-item5 { width: 50%;padding:1% }
-  }
-
-  .grid-item4 {width:24%;padding:1% }
-  .grid-item4 img{width: 100%; }
-
-  @media(max-width:768px){
-    .grid-item4 { width: 50%;padding:1% }
-  }
-
-  .grid-item1 { margin-left: 0.20%; width:96%;padding:1% }
-  .grid-item1 img{width: 100%; }
-
-  @media(max-width:768px){
-    .grid-item1 { width: 100%; padding:1%}
   }
 </STYLE>
 
@@ -119,40 +100,66 @@
     </script>
 
 
-<div class="px-3">
-<div  class="mt-4 container alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>DİKKAT!</strong> Bu kategori DENEME amaçlı açılmıştır. Çalışmalar ÖRNEKTİR.
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-</div>
-
     <!-- Görseller -->
-<div class="grid marginyuzde3">
-  <div class="grid-item hovercalismalar"><img src="img/diger/ashmedkatalog1.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/ashmedkatalog2.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/ashmedkatalog3.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/ashmedkatalog4.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/ashmedkatalog5.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/ashmedkartviziton.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/ashmedkartvizitarka.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/ashmedmailimza.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/bilsoft-ambalaj.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/lavanta-kolonyası-for-behance.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/petosagan.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/kadının-namusuna-giydiği-kıyafet-karar-vermez.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/Ona-fikrini-sordun-mu.webp" ></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/Pala-Fiyat-Teklifi.webp"></div>
-  <div class="grid-item hovercalismalar"><img src="img/diger/loadbehancemobil.png" ></div>
+<div style="margin-top: 4%;" class="grid marginyuzde3">
+  <a href="#diger1" class="grid-item hovercalismalar"><img src="img/diger/ashmedkatalog2.webp" ></a>
+  <a href="#diger2" class="grid-item hovercalismalar"><img src="img/diger/ashmedkatalog4.webp" ></a>
+  <a href="#diger3" class="grid-item hovercalismalar"><img src="img/diger/ashmedkartviziton.webp" ></a>
+  <a href="#diger4" class="grid-item hovercalismalar"><img src="img/diger/ashmedkartvizitarka.webp" ></a>
+  <a href="#diger5" class="grid-item hovercalismalar"><img src="img/diger/ashmedmailimza.webp" ></a>
+  <a href="#diger6" class="grid-item hovercalismalar"><img src="img/diger/loadbehancemobil.png" ></a>
+  <a href="#diger7" class="grid-item hovercalismalar"><img src="img/diger/bilsoft-ambalaj.webp" ></a>
+  <a href="#diger8" class="grid-item hovercalismalar"><img src="img/diger/lavanta-kolonyası-for-behance.webp" ></a>
+  <a href="#diger9" class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp" ></a>
+  <a href="#diger10" class="grid-item hovercalismalar"><img src="img/diger/petosagan.webp" ></a>
+  <a href="#diger11" class="grid-item hovercalismalar"><img src="img/diger/kadının-namusuna-giydiği-kıyafet-karar-vermez.webp" ></a>
+  <a href="#diger12" class="grid-item hovercalismalar"><img src="img/diger/Ona-fikrini-sordun-mu.webp" ></a>
+  <a href="#diger13" class="grid-item hovercalismalar"><img src="img/diger/Pala-Fiyat-Teklifi.webp"></a>
 </div>
 
 
-<div class="px-3">
-  <div  class="mt-4 container alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>DİKKAT!</strong> Bu kategori DENEME amaçlı açılmıştır. Çalışmalar ÖRNEKTİR.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-  </div>
+<!-- Görsel Büyütme -->
+<div id="diger1" class="fotobuyutucu back-button">
+  <img src="img/diger/ashmedkatalog2.webp">
+</div>
+<div id="diger2" class="fotobuyutucu back-button">
+  <img src="img/diger/ashmedkatalog4.webp">
+</div>
+<div id="diger3" class="fotobuyutucu back-button">
+  <img src="img/diger/ashmedkartviziton.webp">
+</div>
+<div id="diger4" class="fotobuyutucu back-button">
+  <img src="img/diger/ashmedkartvizitarka.webp">
+</div>
+<div id="diger5" class="fotobuyutucu back-button">
+  <img src="img/diger/ashmedmailimza.webp">
+</div>
+<div id="diger6" class="fotobuyutucu back-button">
+  <img src="img/diger/loadbehancemobil.png">
+</div>
+<div id="diger7" class="fotobuyutucu back-button">
+  <img src="img/diger/bilsoft-ambalaj.webp">
+</div>
+<div id="diger8" class="fotobuyutucu back-button">
+  <img src="img/diger/lavanta-kolonyası-for-behance.webp">
+</div>
+<div id="diger9" class="fotobuyutucu back-button">
+  <img src="img/diger/Jameshetfield.webp">
+</div>
+<div id="diger10" class="fotobuyutucu back-button">
+  <img src="img/diger/petosagan.webp">
+</div>
+<div id="diger11" class="fotobuyutucu back-button">
+  <img src="img/diger/kadının-namusuna-giydiği-kıyafet-karar-vermez.webp">
+</div>
+<div id="diger12" class="fotobuyutucu back-button">
+  <img src="img/diger/Ona-fikrini-sordun-mu.webp">
+</div>
+<div id="diger13" class="fotobuyutucu back-button">
+  <img src="img/diger/Pala-Fiyat-Teklifi.webp">
+</div>
+
+
 
 
   
@@ -174,6 +181,7 @@
     </div>
   </div>
   <p class="tümhaklar">©2023 Tüm haklarını sakladım.</p>
+
 
 
 
