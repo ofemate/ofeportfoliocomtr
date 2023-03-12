@@ -39,13 +39,6 @@ a.footer:visited {
     font-family: 'montserrat', sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
-    #kategoribaslikid {font-size: 120%; letter-spacing: 12px;}
-}
-@media only screen and (max-width: 768px) {
-    #kategoribaslikid {font-size: 80%; letter-spacing: 8px;}
-}
-
 
 @media only screen and (min-width: 768px) {
     .marginyuzde3 {margin-left: 3%;}
@@ -78,21 +71,6 @@ a.footer:visited {
     .kategoribaslikdegisken {font-size:larger; }
   }
 
-
-  .kategoribaslikdegiskenhakkimda {
-    color:rgb(0, 0, 0);
-    padding-top:20%;
-    margin-left: 12%;
-    font-family:'montserrat', sans-serif;
-    letter-spacing: 5px;
-  }
- 
-  @media only screen and (max-width: 768px) {
-    .kategoribaslikdegiskenhakkimda {font-size:small; }
-  }
-  @media only screen and (min-width: 768px) {
-    .kategoribaslikdegiskenhakkimda {font-size:larger; }
-  }
 
 
 .mail{
@@ -197,84 +175,46 @@ a.footer:visited {
     margin-top: 23px;
 }
 
-    @media only screen and (min-width: 767px) {
-        .logoblokcizgi {
-          display: none;
-          margin-top: 20px;
-        }
-      }
-
       
-      .line {
-        height: 1px;
-        width: 50%;
-        background-color: gray;
-        margin: 20px auto;
-        position: relative;
-        display: flex;
-        align-items: center;
-      }
-      .line:before,
-      .line:after {
-        content: "";
-        height: 5px;
-        width: 5px;
-        border-radius: 50%;
-        border: 1px solid gray;
-        background-color: rgba(245, 245, 245, 0.913);
-        position: absolute;
-      }
-      .line:before {
-        left: 0;
-      }
-      .line:after {
-        right: 0;
-      }
-
-      @media only screen and (min-width: 769px) {
-        .insaatmobilke {
-          display: none;
+        .line {
+          height: 1px;
+          width: 50%;
+          background-color: gray;
+          margin: 20px auto;
+          position: relative;
+          display: flex;
+          align-items: center;
         }
-      }
-      @media only screen and (max-width: 768px) {
-        .insaatwebke {
-          display: none;
+        .line:before,
+        .line:after {
+          content: "";
+          height: 5px;
+          width: 5px;
+          border-radius: 50%;
+          border: 1px solid gray;
+          background-color: rgba(245, 245, 245, 0.913);
+          position: absolute;
         }
-      }
+        .line:before {
+          left: 0;
+        }
+        .line:after {
+          right: 0;
+        }
 
-.ismim{
-  font-family: 'montserrat', sans-serif;
-  margin-left:12%;
-  margin-top: 8%;
-  letter-spacing: 5px;
-  font-weight: 600;
-}
+        @media only screen and (min-width: 769px) {
+          .insaatmobilke {
+            display: none;
+          }
+        }
+        @media only screen and (max-width: 768px) {
+          .insaatwebke {
+            display: none;
+          }
+        }
 
-      
 
-.svg-half {
-  position: relative;
-}
-.svg-half img {
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-}
-.svg-half svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 75px;
-  height: 75px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  overflow: visible;
-  stroke: #470098;
-  stroke-width: 6;
-  transform: rotate(90deg);
-  stroke: url(#gradiant);
-}
+
 
 @media only screen and (max-width: 768px) {
   .mobilyok {
@@ -288,15 +228,7 @@ a.footer:visited {
   }
 }
 
-@media only screen and (min-width: 10000000) {
-  .mobildevar {
-    display:none;
-  }
-}
 
-
-
-/* Overlay styles */
 .fotobuyutucu {
   position: fixed;
   z-index: 999;
