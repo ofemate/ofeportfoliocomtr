@@ -113,7 +113,7 @@
 
 
  <div style="margin-top: 4%;" class="grid marginyuzde3 fotobutucumasonry">
-  <a href="img/sosyalmedya/ifco.webp" class="grid-item hovercalismalar fancybox lazy" data-fancybox-group="gallery" ><img src="img/sosyalmedya/ifco.webp"></a>
+  <a href="img/sosyalmedya/ifco.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery" ><img src="img/sosyalmedya/ifco.webp"></a>
   <a href="img/sosyalmedya/artrocanakkale.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery" ><img src="img/sosyalmedya/artrocanakkale.webp" ></a>
   <a href="img/sosyalmedya/trendyoltogg.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img src="img/sosyalmedya/trendyoltogg.webp" ></a>
   <a href="img/sosyalmedya/jüpiter-29-ekim.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img src="img/sosyalmedya/jüpiter-29-ekim.webp" ></a>
@@ -205,7 +205,12 @@
 
   $(document).ready(function(){
     $('a.fancybox').fancybox({
-      'closeBtn' : false 
+      'closeSpeed' : 60,
+      'openSpeed' : 60,
+      'closeBtn' : false,
+      'nextSpeed' : 100,
+      'prevSpeed': 100,
+
     });
     $(function () {
 		        $("img.lazy").lazyload({
@@ -215,8 +220,5 @@
 
   })
   </script>
-
-
-
   </body>
 </html>

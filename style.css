@@ -256,3 +256,8 @@ a.footer:visited {
   pointer-events: auto;
 }
 
+.fancybox-lock .fancybox-overlay{overflow-y:hidden!important}
+
+.fancybox-bg {
+  background: none !important;
+}
