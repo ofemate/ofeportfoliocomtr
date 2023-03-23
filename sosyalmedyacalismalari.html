@@ -18,6 +18,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <link rel="stylesheet" href="js/source/jquery.fancybox.css" />
 
+
+
 <style>
   .fancybox-skin{padding: 0px!important;}
 </style>
@@ -130,17 +132,17 @@
 </div>
 
 <div class="grid marginyuzde3">
- <a href="img" class="grid-item hovercalismalar mobilvar"><img  src="img/sosyalmedya/depremsırasında1.webp"  ></a>
- <a href="img" class="grid-item hovercalismalar mobilvar"><img  src="img/sosyalmedya/depremsırasında3.webp"  ></a>
- <a href="img" class="grid-item hovercalismalar mobilvar"><img  src="img/sosyalmedya/depremsırasında4.webp"  ></a>
- <a href="img" class="grid-item hovercalismalar mobilvar"><img  src="img/sosyalmedya/depremsırasında2.webp"  ></a>
+ <a href="img" class="grid-item hovercalismalar mobilvar"><img  src="img/sosyalmedya/depremsırasında1.webp"></a>
+ <a href="img" class="grid-item hovercalismalar mobilvar"><img  src="img/sosyalmedya/depremsırasında3.webp"></a>
+ <a href="img" class="grid-item hovercalismalar mobilvar"><img  src="img/sosyalmedya/depremsırasında4.webp"></a>
+ <a href="img" class="grid-item hovercalismalar mobilvar"><img  src="img/sosyalmedya/depremsırasında2.webp"></a>
 </div>
 
 <div class="grid marginyuzde3">
-  <a href="img/sosyalmedya/youtubetogg.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/youtubetogg.webp"  ></a>
+  <a href="img/sosyalmedya/youtubetogg.webp" class="grid-item hovercalismalar fancybox " data-fancybox-group="gallery"><img  src="img/sosyalmedya/youtubetogg.webp"  ></a>
   <a href="img/sosyalmedya/ennacanakkale.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/ennacanakkale.webp"  ></a>
   <a href="img/sosyalmedya/hijyen-günü.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/hijyen-günü.webp"  ></a>
-  <a href="img/sosyalmedya/NefiseKadinlarGunu.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img src="img/sosyalmedya/nefisekadinlargunu.webp"  ></a>
+  <a href="img/sosyalmedya/nefisekadinlargunu.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img src="img/sosyalmedya/nefisekadinlargunu.webp"  ></a>
   <a href="img/sosyalmedya/Comio-İlan-Grafik-Tasarımcı-İlan---Kopya.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/Comio-İlan-Grafik-Tasarımcı-İlan---Kopya.webp"  ><av>
   <a href="img/sosyalmedya/Tirilyedensenlik.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/tirilyedensenlik.webp"  ></a>
   <a href="img/sosyalmedya/yonder-spor-tablosu.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/yonder-spor-tablosu.webp"  ></a>
@@ -204,12 +206,13 @@
     })
 
   $(document).ready(function(){
-    $('a.fancybox').fancybox({
-      'closeSpeed' : 60,
-      'openSpeed' : 60,
+    $('.fancybox').fancybox({
+      'closeSpeed' : 100,
+      'openSpeed' : 100,
       'closeBtn' : false,
       'nextSpeed' : 100,
       'prevSpeed': 100,
+      'autoSize' : true
 
     });
     $(function () {
