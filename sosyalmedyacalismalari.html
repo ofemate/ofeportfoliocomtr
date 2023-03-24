@@ -16,13 +16,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<link rel="stylesheet" href="js/source/jquery.fancybox.css" />
 
-
-
-<style>
-  .fancybox-skin{padding: 0px!important;}
-</style>
+<script src="js/jquery.min.js" ></script>
+<link rel="stylesheet" href="js/jquery.fancybox.css" />
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/masonry.pkgd.min.js" ></script>
 
 <STYLE>
   body{background-color: rgb(238, 238, 238); padding:0px;margin:0px}
@@ -114,21 +112,21 @@
 
 
 
- <div style="margin-top: 4%;" class="grid marginyuzde3 fotobutucumasonry">
-  <a href="img/sosyalmedya/ifco.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery" ><img src="img/sosyalmedya/ifco.webp"></a>
-  <a href="img/sosyalmedya/artrocanakkale.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery" ><img src="img/sosyalmedya/artrocanakkale.webp" ></a>
-  <a href="img/sosyalmedya/trendyoltogg.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img src="img/sosyalmedya/trendyoltogg.webp" ></a>
-  <a href="img/sosyalmedya/jüpiter-29-ekim.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img src="img/sosyalmedya/jüpiter-29-ekim.webp" ></a>
-  <a href="img/sosyalmedya/Kale-Seyahat-Yolculugu-Avantaja-Ceviren-Uyelik.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img src="img/sosyalmedya/Kale-Seyahat-Yolculugu-Avantaja-Ceviren-Uyelik.webp" ></a>
-  <a href="img/sosyalmedya/Okulistik-ortaokul.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img src="img/sosyalmedya/Okulistik-ortaokul.webp" ></a>
+ <div style="margin-top: 4%;" class="grid marginyuzde3">
+  <a data-fancybox="gallery" href="img/sosyalmedya/ifco.webp" class="grid-item hovercalismalar"  ><img src="img/sosyalmedya/ifco.webp"></a>
+  <a data-fancybox="gallery" href="img/sosyalmedya/artrocanakkale.webp" class="grid-item hovercalismalar"  ><img src="img/sosyalmedya/artrocanakkale.webp" ></a>
+  <a data-fancybox="gallery" href="img/sosyalmedya/trendyoltogg.webp" class="grid-item hovercalismalar" ><img src="img/sosyalmedya/trendyoltogg.webp" ></a>
+  <a data-fancybox="gallery" href="img/sosyalmedya/jüpiter-29-ekim.webp" class="grid-item hovercalismalar" ><img src="img/sosyalmedya/jüpiter-29-ekim.webp" ></a>
+  <a data-fancybox="gallery" href="img/sosyalmedya/Kale-Seyahat-Yolculugu-Avantaja-Ceviren-Uyelik.webp" class="grid-item hovercalismalar " ><img src="img/sosyalmedya/Kale-Seyahat-Yolculugu-Avantaja-Ceviren-Uyelik.webp" ></a>
+  <a data-fancybox="gallery" href="img/sosyalmedya/Okulistik-ortaokul.webp" class="grid-item hovercalismalar" ><img src="img/sosyalmedya/Okulistik-ortaokul.webp" ></a>
 </div>
 
 <div class="grid5 marginyuzde3">
-  <a href="img/sosyalmedya/depremsırasında1.webp" class="grid-item5 hovercalismalar mobilyok fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/depremsırasında1.webp"  ></a>
-  <a href="img/sosyalmedya/depremsırasında2.webp" class="grid-item5 hovercalismalar mobilyok fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/depremsırasında2.webp"  ></a>
-  <a href="img/sosyalmedya/depremsırasında3.webp" class="grid-item5 hovercalismalar mobilyok fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/depremsırasında3.webp"  ></a>
-  <a href="img/sosyalmedya/depremsırasında4.webp" class="grid-item5 hovercalismalar mobilyok fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/depremsırasında4.webp"  ></a>
-  <a href="img/sosyalmedya/depremsırasında5.webp" class="grid-item5 hovercalismalar mobilyok fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/depremsırasında5.webp"  ></a>
+  <a href="img/sosyalmedya/depremsırasında1.webp" class="grid-item5 hovercalismalar mobilyok " ><img  src="img/sosyalmedya/depremsırasında1.webp"  ></a>
+  <a href="img/sosyalmedya/depremsırasında2.webp" class="grid-item5 hovercalismalar mobilyok " ><img  src="img/sosyalmedya/depremsırasında2.webp"  ></a>
+  <a href="img/sosyalmedya/depremsırasında3.webp" class="grid-item5 hovercalismalar mobilyok " ><img  src="img/sosyalmedya/depremsırasında3.webp"  ></a>
+  <a href="img/sosyalmedya/depremsırasında4.webp" class="grid-item5 hovercalismalar mobilyok " ><img  src="img/sosyalmedya/depremsırasında4.webp"  ></a>
+  <a href="img/sosyalmedya/depremsırasında5.webp" class="grid-item5 hovercalismalar mobilyok " ><img  src="img/sosyalmedya/depremsırasında5.webp"  ></a>
 </div>
 
 <div class="grid marginyuzde3">
@@ -139,24 +137,24 @@
 </div>
 
 <div class="grid marginyuzde3">
-  <a href="img/sosyalmedya/youtubetogg.webp" class="grid-item hovercalismalar fancybox " data-fancybox-group="gallery"><img  src="img/sosyalmedya/youtubetogg.webp"  ></a>
-  <a href="img/sosyalmedya/ennacanakkale.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/ennacanakkale.webp"  ></a>
-  <a href="img/sosyalmedya/hijyen-günü.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/hijyen-günü.webp"  ></a>
-  <a href="img/sosyalmedya/nefisekadinlargunu.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img src="img/sosyalmedya/nefisekadinlargunu.webp"  ></a>
-  <a href="img/sosyalmedya/Comio-İlan-Grafik-Tasarımcı-İlan---Kopya.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/Comio-İlan-Grafik-Tasarımcı-İlan---Kopya.webp"  ><av>
-  <a href="img/sosyalmedya/Tirilyedensenlik.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/tirilyedensenlik.webp"  ></a>
-  <a href="img/sosyalmedya/yonder-spor-tablosu.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/yonder-spor-tablosu.webp"  ></a>
-  <a href="img/sosyalmedya/makine-bakım-onarımcısı.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/makine-bakım-onarımcısı.webp" ></a>
-  <a href="img/sosyalmedya/Rapor-Sonucu-erken-hasat-1.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/Rapor-Sonucu-erken-hasat-1.webp"  ></a>
-  <a href="img/sosyalmedya/ashmed-yenilenen-web-sitemiz.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/ashmed-yenilenen-web-sitemiz.webp"  ></a>
-  <a href="img/sosyalmedya/babygrossankaracokyakinda.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/babygrossankaracokyakinda.webp"  ></a>
-  <a href="img/sosyalmedya/sömestr_.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/Rapor-Sonucu-erken-hasat-2.webp"  ></a>
-  <a href="img/sosyalmedya/toplu-mulakat.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/sömestr_.webp"  ></a>
-  <a href="img/sosyalmedya/toplu-mulakat.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/toplu-mulakat.webp"  ></a>
-  <a href="img/sosyalmedya/babygross-29-ekim.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/babygross-29-ekim.webp"  ></a>
-  <a href="img/sosyalmedya/bikoengelsizstory.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/bikoengelsizstory.webp"  ></a>
-  <a href="img/sosyalmedya/11eylulinterkan.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/11eylulinterkan.webp"  ></a>
-  <a href="img/sosyalmedya/Spor-Şenlikleri.webp" class="grid-item hovercalismalar fancybox" data-fancybox-group="gallery"><img  src="img/sosyalmedya/Spor-Şenlikleri.webp"  ></a>
+  <a href="img/sosyalmedya/youtubetogg.webp" class="grid-item hovercalismalar  " ><img  src="img/sosyalmedya/youtubetogg.webp"  ></a>
+  <a href="img/sosyalmedya/ennacanakkale.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/ennacanakkale.webp"  ></a>
+  <a href="img/sosyalmedya/hijyen-günü.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/hijyen-günü.webp"  ></a>
+  <a href="img/sosyalmedya/nefisekadinlargunu.webp" class="grid-item hovercalismalar " ><img src="img/sosyalmedya/nefisekadinlargunu.webp"  ></a>
+  <a href="img/sosyalmedya/Comio-İlan-Grafik-Tasarımcı-İlan---Kopya.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/Comio-İlan-Grafik-Tasarımcı-İlan---Kopya.webp"  ><av>
+  <a href="img/sosyalmedya/Tirilyedensenlik.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/tirilyedensenlik.webp"  ></a>
+  <a href="img/sosyalmedya/yonder-spor-tablosu.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/yonder-spor-tablosu.webp"  ></a>
+  <a href="img/sosyalmedya/makine-bakım-onarımcısı.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/makine-bakım-onarımcısı.webp" ></a>
+  <a href="img/sosyalmedya/Rapor-Sonucu-erken-hasat-1.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/Rapor-Sonucu-erken-hasat-1.webp"  ></a>
+  <a href="img/sosyalmedya/ashmed-yenilenen-web-sitemiz.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/ashmed-yenilenen-web-sitemiz.webp"  ></a>
+  <a href="img/sosyalmedya/babygrossankaracokyakinda.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/babygrossankaracokyakinda.webp"  ></a>
+  <a href="img/sosyalmedya/sömestr_.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/Rapor-Sonucu-erken-hasat-2.webp"  ></a>
+  <a href="img/sosyalmedya/toplu-mulakat.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/sömestr_.webp"  ></a>
+  <a href="img/sosyalmedya/toplu-mulakat.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/toplu-mulakat.webp"  ></a>
+  <a href="img/sosyalmedya/babygross-29-ekim.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/babygross-29-ekim.webp"  ></a>
+  <a href="img/sosyalmedya/bikoengelsizstory.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/bikoengelsizstory.webp"  ></a>
+  <a href="img/sosyalmedya/11eylulinterkan.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/11eylulinterkan.webp"  ></a>
+  <a href="img/sosyalmedya/Spor-Şenlikleri.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/Spor-Şenlikleri.webp"  ></a>
 </div>
 
 
@@ -182,14 +180,6 @@
 
 
   
-
-
-<script src="js/jquery.min.js" ></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/source/jquery.fancybox.js"></script>
-<script type="text/javascript" src="js/source/helpers/jquery.fancybox-media.js"></script>
-
-  <script src="js/masonry.pkgd.min.js" ></script>
   <script>
     $(window).load(function(){
         $('.grid').masonry({
@@ -205,23 +195,6 @@
         });
     })
 
-  $(document).ready(function(){
-    $('.fancybox').fancybox({
-      'closeSpeed' : 100,
-      'openSpeed' : 100,
-      'closeBtn' : false,
-      'nextSpeed' : 100,
-      'prevSpeed': 100,
-      'autoSize' : true
-
-    });
-    $(function () {
-		        $("img.lazy").lazyload({
-					effect: "fadeIn"
-				});
-		    });
-
-  })
   </script>
   </body>
 </html>
