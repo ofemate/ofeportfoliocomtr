@@ -60,3 +60,14 @@ window.onload = function() {
     function fg_load() {
         document.getElementById('loading').style.display = 'none'
     }
+
+
+
+    $(document).on('click touchend', function(event) {
+    if ($(event.target).closest('.fancybox-container').length || $(event.target).hasClass('fancybox-container')) {
+        return;
+    }
+
+    $.fancybox.close();
+});
+

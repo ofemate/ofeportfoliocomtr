@@ -58,6 +58,8 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-is-open .fancybox-bg {
+        background: rgba(0, 0, 0, 0.8) !important;
+
     opacity: .9;
     transition-timing-function: cubic-bezier(.22, .61, .36, 1);
 }
@@ -177,6 +179,8 @@ body.compensate-for-scrollbar {
     position: relative;
     text-align: left;
     vertical-align: middle;
+    box-shadow: 0 0 20px rgba(30, 30, 30, 0.3);
+
 }
 
 .fancybox-slide--image .fancybox-content {
@@ -307,7 +311,7 @@ body.compensate-for-scrollbar {
 /* Buttons */
 
 .fancybox-button {
-    background: rgba(30, 30, 30, .6);
+    background: rgba(0, 0, 0, 0.0);
     border: 0;
     border-radius: 0;
     box-shadow: none;
@@ -327,6 +331,7 @@ body.compensate-for-scrollbar {
 .fancybox-button:visited,
 .fancybox-button:link {
     color: #ccc;
+    background-image: url('img/arrow-left.png');
 }
 
 .fancybox-button:hover {
