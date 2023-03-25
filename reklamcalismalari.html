@@ -6,179 +6,51 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
    
     <title>OfeReklam</title>
+ 
     <link rel="stylesheet" href="style.css">
     <script src="js/OfeJava.js"></script>
 
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-<STYLE>
-  body{background-color: rgb(238, 238, 238); padding:0px;margin:0px}
-  .grid-item { width:32%;padding:0.6% }
-  .grid-item img{width: 100%; }
-  
-  @media(max-width:768px){
-    .grid-item { width: 50%; padding:1%}
-  }
-</STYLE>
-
+<script src="js/jquery.min.js" ></script>
+<link rel="stylesheet" href="js/jquery.fancybox.css" />
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/masonry.pkgd.min.js" ></script>
 </head>
-  </head>
   <body>
 
-    <!-- Kategori Başlık JS -->
-    <h1 class="kategoribaslikdegisken">
-      <a href="reklamcalismalari.html" style="text-decoration: none; color: black; font-family: 'montserrat', sans-serif;" class="typewrite" data-period="2000"
-      data-type='[ "reklam çalışmaları", "reklam tasarımları", "advertising designs", "omerfarukerdogan" ]'>
-        <span class="wrap"></span>
-      </a>
-    </h1>
-    <!-- Kategori Başlıklarının JS Kodu -->
-    <script>
-      var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-    </script>
+    <!--Kategori Başlık -->
+  <h1 class="kategoribaslikdegisken">
+    <div href="" style="text-decoration: none; color: black; font-family: 'montserrat', sans-serif;" class="typewrite"
+    data-period="2000" data-type='["reklam çalışmaları", "advertising designs", "omerfarukerdogan" ]'>
+      <span class="wrap"></span>
+  </div>
+  </h1>
 
 
-    <!-- Görseller -->
-<div style="margin-top: 4%;" class="grid marginyuzde3">
-  <a href="#rc2" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/SentosPlusİndirimi.webp"></a>
-  <a href="#rc3" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/nefisesevgilililergunuslider.webp" ></a>
-  <a href="#rc4" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/babygrpssayminislider.webp" ></a>
-  <a href="#rc5" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/wejaaradam.webp" ></a>
-  <a href="#rc9" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/sentoskacirilmayacakfirsat.webp" ></a>
-  <a href="#rc6" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/hkapındakotukokular.webp" ></a>
-  <a href="#rc7" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/bilbord-afişi-zeynep.webp" ></a>
-  <a href="#rc8" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/babygrossonlineozel.webp" ></a>
-  <a href="#rc10" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/nefisekadınlargunuindirim.webp" ></a>
-  <a href="#rc11" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/yondererkenkayit.webp" ></a>
-  <a href="#rc12" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/babygross50indirim.webp" ></a>
-  <a href="#rc13" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/babygrosskraftslider.webp" ></a>
-  <a href="#rc14" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/interkan marketkargo500.webp" ></a>
-  <a href="#rc15" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/bilginetakademibebekspa.webp" ></a>
-  <a href="#rc16" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/interkanmarket20.webp" ></a>
-  <a href="#rc18" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/sentoskacirilmaz.webp" ></a>
-  <a href="#rc17" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/wejaarnike.webp" ></a>
-  <a href="#rc19" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/wejaarkis.webp" ></a>
-  <a href="#rc20" class="grid-item hovercalismalar"><img src="img/reklamcalismalari/wejaarcalvincklein.webp" ></a>
-</div>
-
-
-<!-- Görsel Büyütme -->
-<div id="rc2" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/SentosPlusİndirimi.webp">
-</div>
-<div id="rc3" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/nefisesevgilililergunuslider.webp">
-</div>
-<div id="rc4" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/babygrpssayminislider.webp">
-</div>
-<div id="rc5" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/wejaaradam.webp">
-</div>
-<div id="rc6" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/hkapındakotukokular.webp">
-</div>
-<div id="rc7" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/bilbord-afişi-zeynep.webp">
-</div>
-<div id="rc8" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/babygrossonlineozel.webp">
-</div>
-<div id="rc9" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/sentoskacirilmayacakfirsat.webp">
-</div>
-<div id="rc10" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/nefisekadınlargunuindirim.webp">
-</div>
-<div id="rc11" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/yondererkenkayit.webp">
-</div>
-<div id="rc12" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/babygross50indirim.webp">
-</div>
-<div id="rc13" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/babygrosskraftslider.webp">
-</div>
-<div id="rc14" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/interkan marketkargo500.webp">
-</div>
-<div id="rc15" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/bilginetakademibebekspa.webp">
-</div>
-<div id="rc16" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/interkanmarket20.webp">
-</div>
-<div id="rc17" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/wejaarnike.webp">
-</div>
-<div id="rc18" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/sentoskacirilmaz.webp">
-</div>
-<div id="rc19" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/wejaarkis.webp">
-</div>
-<div id="rc20" class="fotobuyutucu back-button">
-  <img src="img/reklamcalismalari/wejaarcalvincklein.webp">
+ <div style="margin-top: 4%;" class="grid marginyuzde3">
+  <a data-fancybox="gallery" href="img/reklamcalismalari/SentosPlusİndirimi.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/SentosPlusİndirimi.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/nefisesevgilililergunuslider.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/nefisesevgilililergunuslider.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/babygrpssayminislider.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/babygrpssayminislider.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/wejaaradam.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/wejaaradam.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/sentoskacirilmayacakfirsat.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/sentoskacirilmayacakfirsat.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/hkapındakotukokular.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/hkapındakotukokular.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/bilbord-afişi-zeynep.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/bilbord-afişi-zeynep.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/babygrossonlineozel.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/babygrossonlineozel.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/nefisekadınlargunuindirim.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/nefisekadınlargunuindirim.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/yondererkenkayit.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/yondererkenkayit.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/babygross50indirim.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/babygross50indirim.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/babygrosskraftslider.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/babygrosskraftslider.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/interkan marketkargo500.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/interkan marketkargo500.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/bilginetakademibebekspa.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/bilginetakademibebekspa.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/interkanmarket20.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/interkanmarket20.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/sentoskacirilmaz.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/sentoskacirilmaz.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/wejaarnike.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/wejaarnike.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/wejaarkis.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/wejaarkis.webp"></a>
+  <a data-fancybox="gallery" href="img/reklamcalismalari/wejaarcalvincklein.webp" class="grid-item hovercalismalar"  ><img src="img/reklamcalismalari/wejaarcalvincklein.webp"></a>
 </div>
 
 
@@ -202,24 +74,14 @@
   <p class="tümhaklar">©2023 Tüm haklarını sakladım.</p>
 
 
-
-  <script src="js/jquery.min.js" ></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script src="js/masonry.pkgd.min.js" ></script>
+  
   <script>
     $(window).load(function(){
         $('.grid').masonry({
           // options
           itemSelector: '.grid-item'
         });
-    })
-
-    $(window).load(function(){
-        $('.grid3').masonry({
-          // options
-          itemSelector: '.grid-item3'
-        });
-    })
+    })    
   </script>
   </body>
 </html>

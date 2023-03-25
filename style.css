@@ -1,4 +1,18 @@
 
+body{background-color: rgb(238, 238, 238); padding:0px;margin:0px}
+
+.grid-item { width:32%;padding:0.6% }
+.grid-item img{width: 100%; }
+@media(max-width:768px){
+  .grid-item { width: 50%; padding:1%}
+}
+
+.grid-item5 { margin-left: 0.20%; width:19%;padding:1% }
+.grid-item5 img{width: 100%; }
+@media(max-width:768px){
+  .grid-item5 { width: 50%;padding:1% }
+}
+
 
 .footeraltta{
     position: fixed;
@@ -228,10 +242,11 @@ a.footer:visited {
   }
 }
 
-
-.fancybox-lock .fancybox-overlay{overflow-y:hidden!important}
+.fancybox-toolbar {
+  display: none !important;
+}
 
 .fancybox-bg {
-  background: none !important;
+  background-color: #000000df !important;
 }
 

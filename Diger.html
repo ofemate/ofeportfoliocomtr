@@ -5,164 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
    
-    <title>OfeReklam</title>
+    <title>OfeSocialMedia</title>
+ 
     <link rel="stylesheet" href="style.css">
     <script src="js/OfeJava.js"></script>
 
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-<STYLE>
-  body{background-color: rgb(238, 238, 238); padding:0px;margin:0px}
-  .grid-item { width:32%;padding:0.6% }
-  .grid-item img{width: 100%; }
-
-  @media(max-width:768px){
-    .grid-item { width: 50%; padding:1%}
-  }
-</STYLE>
-
+<script src="js/jquery.min.js" ></script>
+<link rel="stylesheet" href="js/jquery.fancybox.css" />
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/masonry.pkgd.min.js" ></script>
 </head>
-  </head>
   <body>
-  
+
+    <!--Kategori Başlık -->
+  <h1 class="kategoribaslikdegisken">
+    <div href="" style="text-decoration: none; color: black; font-family: 'montserrat', sans-serif;" class="typewrite"
+    data-period="2000" data-type='["diğer", "other", "poster, ambalaj falan", "omerfarukerdogan" ]'>
+      <span class="wrap"></span>
+  </div>
+  </h1>
 
 
-    <!-- Kategori Başlık JS -->
-    <h1 class="kategoribaslikdegisken">
-      <a href="reklamcalismalari.html" style="text-decoration: none; color: black; font-family: 'montserrat', sans-serif;" class="typewrite" data-period="2000"
-      data-type='[ "diğer", "other", "ambalaj - poster - şu - bu", "geri kalan her şey", "omerfarukerdogan"]'>
-        <span class="wrap"></span>
-      </a>
-    </h1>
-    <!-- Kategori Başlıklarının JS Kodu -->
-    <script>
-      var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-    </script>
-
-
-    <!-- Görseller -->
-<div style="margin-top: 4%;" class="grid marginyuzde3">
-  <a href="#diger1" class="grid-item hovercalismalar"><img src="img/diger/ashmedkatalog2.webp" ></a>
-  <a href="#diger2" class="grid-item hovercalismalar"><img src="img/diger/ashmedkatalog4.webp" ></a>
-  <a href="#diger3" class="grid-item hovercalismalar"><img src="img/diger/ashmedkartviziton.webp" ></a>
-  <a href="#diger4" class="grid-item hovercalismalar"><img src="img/diger/ashmedkartvizitarka.webp" ></a>
-  <a href="#diger5" class="grid-item hovercalismalar"><img src="img/diger/ashmedmailimza.webp" ></a>
-  <a href="#diger6" class="grid-item hovercalismalar"><img src="img/diger/loadbehancemobil.png" ></a>
-  <a href="#diger7" class="grid-item hovercalismalar"><img src="img/diger/bilsoft-ambalaj.webp" ></a>
-  <a href="#diger8" class="grid-item hovercalismalar"><img src="img/diger/lavanta-kolonyası-for-behance.webp" ></a>
-  <a href="#diger9" class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp" ></a>
-  <a href="#diger10" class="grid-item hovercalismalar"><img src="img/diger/petosagan.webp" ></a>
-  <a href="#diger11" class="grid-item hovercalismalar"><img src="img/diger/kadının-namusuna-giydiği-kıyafet-karar-vermez.webp" ></a>
-  <a href="#diger12" class="grid-item hovercalismalar"><img src="img/diger/Ona-fikrini-sordun-mu.webp" ></a>
-  <a href="#diger13" class="grid-item hovercalismalar"><img src="img/diger/Pala-Fiyat-Teklifi.webp"></a>
+ <div style="margin-top: 4%;" class="grid marginyuzde3">
+  <a data-fancybox="gallery" href="img/diger/ashmedkatalog2.webp" class="grid-item hovercalismalar"><img src="img/diger/ashmedkatalog2.webp"></a>
+  <a data-fancybox="gallery" href="img/diger/ashmedkatalog4.webp" class="grid-item hovercalismalar"><img src="img/diger/ashmedkatalog4.webp"></a>
+  <a data-fancybox="gallery" href="img/diger/ashmedkartviziton.webp" class="grid-item hovercalismalar"><img src="img/diger/ashmedkartviziton.webp"></a>
+  <a data-fancybox="gallery" href="img/diger/ashmedkartvizitarka.webp" class="grid-item hovercalismalar"><img src="img/diger/ashmedkartvizitarka.webp"></a>
+  <a data-fancybox="gallery" href="img/diger/ashmedmailimza.webp" class="grid-item hovercalismalar"><img src="img/diger/ashmedmailimza.webp"></a>
+  <a data-fancybox="gallery" href="img/diger/loadbehancemobil.png" class="grid-item hovercalismalar"><img src="img/diger/loadbehancemobil.png"></a>
+  <a data-fancybox="gallery" href="img/diger/bilsoft-ambalaj.webp" class="grid-item hovercalismalar"><img src="img/diger/bilsoft-ambalaj.webp"></a>
+  <a data-fancybox="gallery" href="img/diger/lavanta-kolonyası-for-behance.webp" class="grid-item hovercalismalar"><img src="img/diger/lavanta-kolonyası-for-behance.webp"></a>
+  <a data-fancybox="gallery" href="img/diger/Jameshetfield.webp" class="grid-item hovercalismalar"><img src="img/diger/Jameshetfield.webp"></a>
+  <a data-fancybox="gallery" href="img/diger/petosagan.webp" class="grid-item hovercalismalar"><img src="img/diger/petosagan.webp"></a>
+  <a data-fancybox="gallery" href="img/diger/kadının-namusuna-giydiği-kıyafet-karar-vermez.webp" class="grid-item hovercalismalar"><img src="img/diger/kadının-namusuna-giydiği-kıyafet-karar-vermez.webp"></a>
+  <a data-fancybox="gallery" href="img/diger/Ona-fikrini-sordun-mu.webp" class="grid-item hovercalismalar"><img src="img/diger/Ona-fikrini-sordun-mu.webp"></a>
+  <a data-fancybox="gallery" href="img/diger/Pala-Fiyat-Teklifi.webp" class="grid-item hovercalismalar"><img src="img/diger/Pala-Fiyat-Teklifi.webp"></a>
 </div>
 
 
-<!-- Görsel Büyütme -->
-<div id="diger1" class="fotobuyutucu back-button">
-  <img src="img/diger/ashmedkatalog2.webp">
-</div>
-<div id="diger2" class="fotobuyutucu back-button">
-  <img src="img/diger/ashmedkatalog4.webp">
-</div>
-<div id="diger3" class="fotobuyutucu back-button">
-  <img src="img/diger/ashmedkartviziton.webp">
-</div>
-<div id="diger4" class="fotobuyutucu back-button">
-  <img src="img/diger/ashmedkartvizitarka.webp">
-</div>
-<div id="diger5" class="fotobuyutucu back-button">
-  <img src="img/diger/ashmedmailimza.webp">
-</div>
-<div id="diger6" class="fotobuyutucu back-button">
-  <img src="img/diger/loadbehancemobil.png">
-</div>
-<div id="diger7" class="fotobuyutucu back-button">
-  <img src="img/diger/bilsoft-ambalaj.webp">
-</div>
-<div id="diger8" class="fotobuyutucu back-button">
-  <img src="img/diger/lavanta-kolonyası-for-behance.webp">
-</div>
-<div id="diger9" class="fotobuyutucu back-button">
-  <img src="img/diger/Jameshetfield.webp">
-</div>
-<div id="diger10" class="fotobuyutucu back-button">
-  <img src="img/diger/petosagan.webp">
-</div>
-<div id="diger11" class="fotobuyutucu back-button">
-  <img src="img/diger/kadının-namusuna-giydiği-kıyafet-karar-vermez.webp">
-</div>
-<div id="diger12" class="fotobuyutucu back-button">
-  <img src="img/diger/Ona-fikrini-sordun-mu.webp">
-</div>
-<div id="diger13" class="fotobuyutucu back-button">
-  <img src="img/diger/Pala-Fiyat-Teklifi.webp">
-</div>
-
-
-
-
-  
     <!-- FOOTER BY OFE -->
    <div style="margin-top: 15px; text-align: center; flex-wrap: wrap; width:max-content; margin-left: auto; margin-right: auto; max-width: 100%;">
     <div style="padding-right: 30px; padding-left: 30px;">
@@ -183,18 +68,14 @@
   <p class="tümhaklar">©2023 Tüm haklarını sakladım.</p>
 
 
-
-
-  <script src="js/jquery.min.js" ></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script src="js/masonry.pkgd.min.js" ></script>
+  
   <script>
     $(window).load(function(){
         $('.grid').masonry({
           // options
           itemSelector: '.grid-item'
         });
-    })
+    })    
   </script>
   </body>
 </html>
