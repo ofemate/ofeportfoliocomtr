@@ -55,7 +55,8 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-window.addEventListener('load', function() {
-    const wrapper = document.querySelector('.wrapper');
-    wrapper.classList.remove('show-loading');
-  });
+    window.addEventListener('load', fg_load)
+
+    function fg_load() {
+        document.getElementById('loading').style.display = 'none'
+    }
