@@ -55,3 +55,7 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+window.addEventListener('load', function() {
+    const wrapper = document.querySelector('.wrapper');
+    wrapper.classList.remove('show-loading');
+  });
