@@ -7,13 +7,6 @@ body{background-color: rgb(238, 238, 238); padding:0px;margin:0px}
   .grid-item { width: 50%; padding:1%}
 }
 
-.grid-item5 { margin-left: 0.20%; width:19%;padding:1% }
-.grid-item5 img{width: 100%; }
-@media(max-width:768px){
-  .grid-item5 { width: 50%;padding:1% }
-}
-
-
 .footeraltta{
     position: fixed;
     bottom: 0;

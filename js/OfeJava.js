@@ -71,3 +71,9 @@ window.onload = function() {
     $.fancybox.close();
 });
 
+$(document).ready(function() {
+    $('[data-fancybox]').fancybox({
+      tapOutside: true
+    });
+  });
+  
