@@ -60,29 +60,3 @@ window.onload = function() {
     function fg_load() {
         document.getElementById('loading').style.display = 'none'
     }
-
-
-
-    $(document).on('click touchend', function(event) {
-    if ($(event.target).closest('.fancybox-container').length || $(event.target).hasClass('fancybox-container')) {
-        return;
-    }
-
-    $.fancybox.close();
-});
-
-$(document).ready(function() {
-    $('[data-fancybox]').fancybox({
-      tapOutside: true
-    });
-  });
-  
-  $(document).ready(function() {
-    $('[data-fancybox]').fancybox({
-      touch: {
-        vertical: true,  // Dikey dokunma hareketlerine izin verir
-        momentum: true   // Dokunma hareketlerinin momentumunu (durgunluk) korur
-      }
-    });
-  });
-  
