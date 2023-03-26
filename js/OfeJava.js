@@ -77,3 +77,12 @@ $(document).ready(function() {
     });
   });
   
+  $(document).ready(function() {
+    $('[data-fancybox]').fancybox({
+      touch: {
+        vertical: true,  // Dikey dokunma hareketlerine izin verir
+        momentum: true   // Dokunma hareketlerinin momentumunu (durgunluk) korur
+      }
+    });
+  });
+  
