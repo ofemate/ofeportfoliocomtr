@@ -21,10 +21,7 @@
 </head>
   <body>
 
-<!--Loader-->
-    <div id="loading">
-      <img src="img/loader.gif" alt="Yükleniyor..." />
-    </div> 
+
 
 <a href="#menu" id="toggle"><span></span></a>
 
@@ -61,7 +58,6 @@
   margin-top: 5%;
   margin-left: 2%;
   z-index: 999;
-  box-shadow: #8300c4;
 }
 
 #toggle span:after,
@@ -82,12 +78,12 @@
 #toggle span,
 #toggle span:after,
 #toggle span:before {
-  width: 100%;
-  height: 5px;
-  background-color: #8300c4;
+  width: 67%;
+  height:4px;
+  background-color: #282828;
   transition: all 0.3s;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: 0px;
   
 }
 
@@ -118,16 +114,16 @@
         font-family: 'montserrat', sans-serif;
   text-align: start;
   border-radius: 9px;
-  background: white;
+  background: rgba(255, 255, 255, 0.962);
   box-shadow: 0 1px 8px rgba(0,0,0,0.05);
   /* just for this demo */
   opacity: 0;
   visibility: hidden;
-  transition: opacity .1s;
+  transition: opacity .2s;
 }
 #aktif{
  color: black;
- font-weight: 500;
+ font-weight: 600;
  text-decoration: underline;
 }
 li #aktif:hover,
@@ -144,13 +140,14 @@ ul, li, li a {
 }
 li a {
   padding: 5px;
-  color: #888;
+  font-weight: 400;
+  color: #606060;
   text-decoration: none;
   transition: all .2s;
 }
 li a:hover,
 li a:focus {
-  background: #8300c4;
+  background: #313131;
   color: #fff;
 }
 
@@ -218,7 +215,10 @@ li a:focus {
   </div>
   <p class="tümhaklar">©2023 Tüm haklarını sakladım.</p>
 
-
+<!--Loader-->
+<div id="loading">
+  <img src="img/loader.gif" alt="Yükleniyor..." />
+</div> 
   
   <script>
     $(window).load(function(){
@@ -230,6 +230,7 @@ li a:focus {
   </script>
 
 <script src="js/OfeJava.js"></script>
+
 
 </body>
 </html>

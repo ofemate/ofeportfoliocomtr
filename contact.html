@@ -29,10 +29,7 @@
   </head>
   <body>
     
-    <!--Loader-->
-    <div id="loading">
-      <img src="img/loader.gif" alt="Yükleniyor..." />
-    </div> 
+
 
     <a href="#menu" id="toggle"><span></span></a>
 
@@ -62,14 +59,13 @@
     <style>
       /* Important styles */
     #toggle {
-      position:sticky;
+      position: fixed;
       display: block;
       width: 28px;
       height: 30px;
       margin-top: 5%;
       margin-left: 2%;
       z-index: 999;
-      box-shadow: #8300c4;
     }
     
     #toggle span:after,
@@ -90,12 +86,12 @@
     #toggle span,
     #toggle span:after,
     #toggle span:before {
-      width: 100%;
-      height: 5px;
-      background-color: #8300c4;
+      width: 67%;
+      height:4px;
+      background-color: #282828;
       transition: all 0.3s;
       backface-visibility: hidden;
-      border-radius: 20px;
+      border-radius: 0px;
       
     }
     
@@ -126,16 +122,16 @@
             font-family: 'montserrat', sans-serif;
       text-align: start;
       border-radius: 9px;
-      background: white;
+      background: rgba(255, 255, 255, 0.962);
       box-shadow: 0 1px 8px rgba(0,0,0,0.05);
       /* just for this demo */
       opacity: 0;
       visibility: hidden;
-      transition: opacity .1s;
+      transition: opacity .2s;
     }
     #aktif{
      color: black;
-     font-weight: 500;
+     font-weight: 600;
      text-decoration: underline;
     }
     li #aktif:hover,
@@ -152,13 +148,14 @@
     }
     li a {
       padding: 5px;
-      color: #888;
+      font-weight: 400;
+      color: #606060;
       text-decoration: none;
       transition: all .2s;
     }
     li a:hover,
     li a:focus {
-      background: #8300c4;
+      background: #313131;
       color: #fff;
     }
     
@@ -201,7 +198,11 @@
    </div>
 </div>
 
-  
+    <!--Loader-->
+    <div id="loading">
+      <img src="img/loader.gif" alt="Yükleniyor..." />
+    </div>   
+
   <script src="js/jquery.min.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <script src="js/masonry.pkgd.min.js" ></script>
