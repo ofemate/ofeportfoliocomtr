@@ -83,7 +83,7 @@ a.footer:visited {
 .mail{
     text-align: center;
     font-family: 'montserrat', sans-serif;
-    margin-top: 250px;
+    margin-top: 150px;
     letter-spacing: 2px;
     font-weight:700;
 }
@@ -93,6 +93,13 @@ a.footer:visited {
     letter-spacing: 9px;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 768px) {
+  .mail {
+    margin-top: 250px;
+  }
+}
+
 @media only screen and (min-width:992px) {
     .hovereffect{
     filter: grayscale(70%);
@@ -262,3 +269,7 @@ a.footer:visited {
   -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
+
+
+
+
