@@ -21,8 +21,6 @@
 </head>
   <body>
 
-
-
 <a href="#menu" id="toggle"><span></span></a>
 
 <div id="menu">
@@ -44,12 +42,10 @@
     <li><a href="contact.html">Contact</a></li>
     <hr style="margin: 0;">
     <li><a href="insaat.html">Hakkımda</a></li>
-
   </ul>
 </div>
 
 <style>
-  /* Important styles */
 #toggle {
   position: fixed;
   display: block;
@@ -83,11 +79,9 @@
   background-color: #282828;
   transition: all 0.3s;
   backface-visibility: hidden;
-  border-radius: 0px;
-  
+  border-radius: 0px; 
 }
 
-/* on activation */
 #toggle.on span {
   background-color: transparent;
 }
@@ -102,21 +96,19 @@
   visibility: visible;
 }
 
-/* menu appearance*/
 #menu {
   position: fixed;
   z-index: 998;
   color: #999;
-  width: 250px;
+  width: 270px;
   margin-top: 6%;
   padding: 1%;
   margin-left: 2%;
-        font-family: 'montserrat', sans-serif;
+  font-family: 'montserrat', sans-serif;
   text-align: start;
   border-radius: 9px;
   background: rgba(255, 255, 255, 0.962);
   box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-  /* just for this demo */
   opacity: 0;
   visibility: hidden;
   transition: opacity .2s;
@@ -149,11 +141,9 @@ li a:hover,
 li a:focus {
   background: #313131;
   color: #fff;
+  margin-left: 5%;
 }
-
 </style>
-
-
 
     <!--Kategori Başlık -->
   <h1 class="kategoribaslikdegisken">
@@ -162,7 +152,6 @@ li a:focus {
       <span class="wrap"></span>
   </div>
   </h1>
-
 
  <div style="margin-top: 4%;" class="grid marginyuzde3">
   <a data-fancybox="gallery" href="img/sosyalmedya/ifco.webp" class="grid-item hovercalismalar" ><img src="img/sosyalmedya/ifco.webp"></a>
@@ -193,7 +182,6 @@ li a:focus {
   <a data-fancybox="gallery" href="img/sosyalmedya/11eylulinterkan.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/11eylulinterkan.webp"  ></a>
   <a data-fancybox="gallery" href="img/sosyalmedya/Spor-Şenlikleri.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/Spor-Şenlikleri.webp"  ></a>
   <a data-fancybox="gallery" href="img/sosyalmedya/DansDansDans.webp" class="grid-item hovercalismalar " ><img  src="img/sosyalmedya/DansDansDans.webp"  ></a>
-
 </div>
 
 
@@ -224,14 +212,12 @@ li a:focus {
   <script>
     $(window).load(function(){
         $('.grid').masonry({
-          // options
           itemSelector: '.grid-item'
         });
     })   
   </script>
 
 <script src="js/OfeJava.js"></script>
-
 
 </body>
 </html>

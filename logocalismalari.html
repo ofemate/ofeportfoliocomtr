@@ -60,7 +60,6 @@
     </div>
     
     <style>
-      /* Important styles */
     #toggle {
       position: fixed;
       display: block;
@@ -95,10 +94,8 @@
       transition: all 0.3s;
       backface-visibility: hidden;
       border-radius: 0px;
-      
     }
     
-    /* on activation */
     #toggle.on span {
       background-color: transparent;
     }
@@ -113,7 +110,6 @@
       visibility: visible;
     }
     
-    /* menu appearance*/
     #menu {
       position: fixed;
       z-index: 998;
@@ -122,12 +118,11 @@
       margin-top: 6%;
       padding: 1%;
       margin-left: 2%;
-            font-family: 'montserrat', sans-serif;
+      font-family: 'montserrat', sans-serif;
       text-align: start;
       border-radius: 9px;
       background: rgba(255, 255, 255, 0.962);
       box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-      /* just for this demo */
       opacity: 0;
       visibility: hidden;
       transition: opacity .2s;
@@ -161,7 +156,6 @@
       background: #313131;
       color: #fff;
     }
-    
     </style>
     
     <!--Kategori Başlık -->
@@ -171,7 +165,6 @@
       <span class="wrap"></span>
   </div>
   </h1>
-
 
  <div style="margin-top: 4%;" class="grid marginyuzde3">
   <a data-fancybox="gallery" href="img/logocalismalari/airistrenkli.webp" class="grid-item hovercalismalar"  ><img src="img/logocalismalari/airistrenkli.webp"></a>
@@ -218,12 +211,10 @@
     <div id="loading">
       <img src="img/loader.gif" alt="Yükleniyor..." />
     </div> 
-
-  
+ 
   <script>
     $(window).load(function(){
         $('.grid').masonry({
-          // options
           itemSelector: '.grid-item'
         });
     })    

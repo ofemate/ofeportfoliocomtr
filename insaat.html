@@ -28,7 +28,6 @@
   </head>
   <body>
 
-
       <a href="#menu" id="toggle"><span></span></a>
 
     <div id="menu">
@@ -50,12 +49,10 @@
         <li><a href="contact.html">Contact</a></li>
         <hr style="margin: 0;">
         <li><a href="insaat.html">Hakkımda</a></li>
-    
       </ul>
     </div>
     
     <style>
-      /* Important styles */
     #toggle {
       position: fixed;
       display: block;
@@ -93,7 +90,6 @@
       
     }
     
-    /* on activation */
     #toggle.on span {
       background-color: transparent;
     }
@@ -108,7 +104,6 @@
       visibility: visible;
     }
     
-    /* menu appearance*/
     #menu {
       position: fixed;
       z-index: 998;
@@ -117,12 +112,11 @@
       margin-top: 6%;
       padding: 1%;
       margin-left: 2%;
-            font-family: 'montserrat', sans-serif;
+      font-family: 'montserrat', sans-serif;
       text-align: start;
       border-radius: 9px;
       background: rgba(255, 255, 255, 0.962);
       box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-      /* just for this demo */
       opacity: 0;
       visibility: hidden;
       transition: opacity .2s;
@@ -155,12 +149,9 @@
     li a:focus {
       background: #313131;
       color: #fff;
-    }
-    
+    } 
     </style>
-    
-
-
+  
     <div style="margin-top: 0%;" class="grid insaatwebke">
       <div class="grid-item "><img src="img/insaat.jpg" alt=""></div>
     </div>
@@ -168,10 +159,6 @@
     <div style="margin-top: 0%;" class="grid insaatmobilke">
       <div class="grid-item "><img src="img/insaatmobil.png" alt=""></div>
     </div>
-
-
-
-
 
    <!-- FOOTER BY OFE ÜSTE YAPIŞIK-->
 <div class="footerustinsaat">
@@ -190,20 +177,16 @@
       <a class="footeraktif"  href="contact.html">Contact</a>
       <a style="color: rgb(245, 245, 455);" class="footeraktif"  href="">......</a>
       <a class="footeraktif"  href="insaat.html">Hakkımda</a>
-
     </div>
   </div>
 </div>
 <p class="tümhaklar">©2023 Tüm haklarını sakladım.</p>
 </div>
 
-
-
     <!--Loader-->
     <div id="loading">
       <img src="img/loader.gif" alt="Yükleniyor..." />
     </div> 
-
 
   <script src="js/jquery.min.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -211,7 +194,6 @@
   <script>
     $(window).load(function(){
         $('.grid').masonry({
-          // options
           itemSelector: '.grid-item'
         });
     })

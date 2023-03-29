@@ -61,8 +61,6 @@ a.footer:visited {
   .marginyuzde3anasayfa {margin-left: 2%;}
 }
 
-
-
 .kategoribaslikdegisken {
     text-align: center;
     color:rgb(0, 0, 0);
@@ -77,8 +75,6 @@ a.footer:visited {
   @media only screen and (min-width: 768px) {
     .kategoribaslikdegisken {font-size:larger; }
   }
-
-
 
 .mail{
     text-align: center;
@@ -122,8 +118,7 @@ a.footer:visited {
 .grid-item5 {
       position: relative;
       }
-
-      
+ 
 @media only screen and (min-width:992px) {
     .grid-item-overlay {
         position: absolute;
@@ -145,7 +140,6 @@ a.footer:visited {
   .hovereffect:hover .grid-item-overlay {
     opacity: 1;
 }
-
 
 @media only screen and (max-width:992px) {
     .grid-item-overlay {
@@ -188,7 +182,6 @@ a.footer:visited {
 .tümhaklarcontact{
     margin-top: 23px;
 }
-
       
         .line {
           height: 1px;
@@ -228,8 +221,6 @@ a.footer:visited {
         }
 
 
-
-
 @media only screen and (max-width: 768px) {
   .mobilyok {
     display: none;
@@ -249,7 +240,6 @@ a.footer:visited {
 .fancybox-bg {
   background-color: #000000df !important;
 }
-
 
 #loading {
   position: fixed;

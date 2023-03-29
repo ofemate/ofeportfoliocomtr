@@ -48,7 +48,6 @@ window.onload = function() {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-    // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
@@ -64,20 +63,15 @@ window.onload = function() {
 
     var theToggle = document.getElementById('toggle');
 
-    // based on Todd Motto functions
-    // https://toddmotto.com/labs/reusable-js/
-    
-    // hasClass
     function hasClass(elem, className) {
         return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
     }
-    // addClass
     function addClass(elem, className) {
         if (!hasClass(elem, className)) {
             elem.className += ' ' + className;
         }
     }
-    // removeClass
+
     function removeClass(elem, className) {
         var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
         if (hasClass(elem, className)) {
@@ -87,7 +81,6 @@ window.onload = function() {
             elem.className = newClass.replace(/^\s+|\s+$/g, '');
         }
     }
-    // toggleClass
     function toggleClass(elem, className) {
         var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
         if (hasClass(elem, className)) {

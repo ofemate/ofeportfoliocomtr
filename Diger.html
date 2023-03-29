@@ -21,8 +21,6 @@
 </head>
   <body>
 
-
-
     <a href="#menu" id="toggle"><span></span></a>
 
     <div id="menu">
@@ -44,12 +42,10 @@
         <li><a href="contact.html">Contact</a></li>
         <hr style="margin: 0;">
         <li><a href="insaat.html">Hakkımda</a></li>
-    
       </ul>
     </div>
     
     <style>
-      /* Important styles */
     #toggle {
       position: fixed;
       display: block;
@@ -83,11 +79,9 @@
       background-color: #282828;
       transition: all 0.3s;
       backface-visibility: hidden;
-      border-radius: 0px;
-      
+      border-radius: 0px; 
     }
     
-    /* on activation */
     #toggle.on span {
       background-color: transparent;
     }
@@ -102,7 +96,6 @@
       visibility: visible;
     }
     
-    /* menu appearance*/
     #menu {
       position: fixed;
       z-index: 998;
@@ -111,12 +104,11 @@
       margin-top: 6%;
       padding: 1%;
       margin-left: 2%;
-            font-family: 'montserrat', sans-serif;
+      font-family: 'montserrat', sans-serif;
       text-align: start;
       border-radius: 9px;
       background: rgba(255, 255, 255, 0.962);
       box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-      /* just for this demo */
       opacity: 0;
       visibility: hidden;
       transition: opacity .2s;
@@ -150,9 +142,7 @@
       background: #313131;
       color: #fff;
     }
-    
     </style>
-    
 
     <!--Kategori Başlık -->
   <h1 class="kategoribaslikdegisken">
@@ -161,7 +151,6 @@
       <span class="wrap"></span>
   </div>
   </h1>
-
 
  <div style="margin-top: 4%;" class="grid marginyuzde3">
   <a data-fancybox="gallery" href="img/diger/kaledeğer.webp" class="grid-item hovercalismalar"><img src="img/diger/kaledeğer.webp"></a>
@@ -182,7 +171,6 @@
   <a data-fancybox="gallery" href="img/diger/Ona-fikrini-sordun-mu.webp" class="grid-item hovercalismalar"><img src="img/diger/Ona-fikrini-sordun-mu.webp"></a>
   <a data-fancybox="gallery" href="img/diger/Pala-Fiyat-Teklifi.webp" class="grid-item hovercalismalar"><img src="img/diger/Pala-Fiyat-Teklifi.webp"></a>
 </div>
-
 
     <!-- FOOTER BY OFE -->
    <div style="margin-top: 15px; text-align: center; flex-wrap: wrap; width:max-content; margin-left: auto; margin-right: auto; max-width: 100%;">
@@ -211,7 +199,6 @@
   <script>
     $(window).load(function(){
         $('.grid').masonry({
-          // options
           itemSelector: '.grid-item'
         });
     })    
