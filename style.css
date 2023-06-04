@@ -262,4 +262,7 @@ a.footer:visited {
 
 
 
-
+.fancybox-caption {
+  font-family: 'montserrat', sans-serif;
+  letter-spacing: 3px;
+}
