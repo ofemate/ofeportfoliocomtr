@@ -88,8 +88,10 @@ window.onload = function() {
                 newClass = newClass.replace( " " + className + " " , " " );
             }
             elem.className = newClass.replace(/^\s+|\s+$/g, '');
+            $('.opacity').removeClass("show");
         } else {
             elem.className += ' ' + className;
+            $('.opacity').addClass("show");
         }
     }
     
@@ -97,5 +99,9 @@ window.onload = function() {
        toggleClass(this, 'on');
        return false;
     }
-    
+
+    $(document).on("click",'.opacity.show',function(){
+        $(this).removeClass("show")
+        $('#toggle').removeClass("on")
+    })    
    
