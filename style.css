@@ -1,6 +1,12 @@
 
 body{background-color: rgb(238, 238, 238); padding:0px;margin:0px}
 
+@font-face {
+  font-family: 'charlotte'; /* Fontun adı */
+  src: url('CHARLOTTE-VMYLY.woff2') format('woff2'), /* Font dosyasının yolu ve formatı */
+}
+
+
 .grid-item { width:32%;padding:0.6% }
 .grid-item img{width: 100%; }
 @media(max-width:768px){
@@ -265,4 +271,40 @@ a.footer:visited {
 .fancybox-caption {
   font-family: 'montserrat', sans-serif;
   letter-spacing: 3px;
+}
+
+.fotoofe{
+  width: 17%;
+  margin: auto;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .fotoofe{
+    width: 60%;
+  }
+}
+
+.hakkimdatext{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  text-align: justify; /* For Edge */
+  -moz-text-align-last: justify; /* For Firefox prior 58.0 */
+  text-align-last: justify;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.hakkimdatext2{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  text-align: justify; /* For Edge */
+  -moz-text-align-last: justify; /* For Firefox prior 58.0 */
+  text-align-last: justify;
+  font-family: 'montserrat', sans-serif;
+  margin-bottom: 78px;
 }
