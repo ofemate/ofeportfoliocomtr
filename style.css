@@ -125,29 +125,8 @@ a.footer:visited {
       position: relative;
       }
  
-@media only screen and (min-width:992px) {
-    .grid-item-overlay {
-        position: absolute;
-        bottom: 10px;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(245, 245, 245, 0.954);
-        font-family: 'montserrat', sans-serif;
-        letter-spacing: 3px;
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-        height: 30px;
-        width: 100%;
-        }
-    }
-  .hovereffect:hover .grid-item-overlay {
-    opacity: 1;
-}
 
-@media only screen and (max-width:992px) {
+
     .grid-item-overlay {
         position: absolute;
         bottom: 3px;
@@ -156,7 +135,7 @@ a.footer:visited {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(245, 245, 245, 0.913);
+        background-color: rgb(255, 255, 255, 0.95);
         font-family: 'montserrat', sans-serif;
         letter-spacing: 1px;
         opacity: 1;
@@ -167,7 +146,7 @@ a.footer:visited {
         font-size: small;
         font-weight: 500;
         }
-}
+
 
   .hovercalismalar {
     transform: scale(1);
@@ -274,19 +253,19 @@ a.footer:visited {
 }
 
 .fotoofe{
-  width: 17%;
+  width: 30%;
   margin: auto;
   display: block;
 }
 
 @media only screen and (max-width: 768px) {
   .fotoofe{
-    width: 60%;
+    width: 75%;
   }
 }
 
 .hakkimdatext{
-  width: 30%;
+  width: 464px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
@@ -294,11 +273,17 @@ a.footer:visited {
   -moz-text-align-last: justify; /* For Firefox prior 58.0 */
   text-align-last: justify;
   font-family: 'montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .hakkimdatext{
+    width: 270px;
+  }
 }
 
 .hakkimdatext2{
-  width: 30%;
+  width: 464px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
@@ -307,4 +292,19 @@ a.footer:visited {
   text-align-last: justify;
   font-family: 'montserrat', sans-serif;
   margin-bottom: 78px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hakkimdatext2{
+    width: 270px;
+  }
+}
+
+.uyarıkutusu{
+  height: 30px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  background-color: aquamarine;
 }
