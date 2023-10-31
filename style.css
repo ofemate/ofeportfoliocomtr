@@ -180,6 +180,85 @@
   letter-spacing: 3px;
 }
 
+.footeraltta{
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 85%;
+}
+a.footer:link {
+  text-decoration: none;
+}
+a.footer:visited {
+  text-decoration: underline;
+}
+
+.footeraktif{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 85%;
+  text-decoration: underline;
+}
+
+.kategoribaslik{
+  text-align: center;
+  margin-top: 5%;
+  font-family: 'montserrat', sans-serif;
+}
+
+.kategoribaslikdegisken {
+  text-align: center;
+  color:rgb(0, 0, 0);
+  padding-top:5%;
+  font-family: 'montserrat', sans-serif;
+  letter-spacing: 5px;
+}
+
+.mail{
+  text-align: center;
+  font-family: 'montserrat', sans-serif;
+  margin-top: 150px;
+  letter-spacing: 2px;
+  font-weight:700;
+}
+.telefon{
+  text-align: center;
+  font-family: 'montserrat', sans-serif;
+  letter-spacing: 9px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+.mail {
+  margin-top: 250px;
+}
+}
+
+.tümhaklarcontact{
+  margin-top: 23px;
+}
+
+.fotoofe{
+  width: 30%;
+  margin: auto;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .fotoofe{
+    width: 75%;
+  }
+}
+
 
 
 
@@ -294,4 +373,41 @@ nav a:hover {
     opacity: 100%;
 
   }
+}
+
+
+.content {
+  height: 100px;
+  width: 45%;
+  color: #fff;
+  font-size: 24px;
+  line-height: 100px; /* centering text just for view */
+  text-align: center;
+  background-color: grey;
+  margin: 5px;
+  border: 1px solid lightgrey;
+  display: none;
+}
+#loadMore {
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: blue;
+  transition: .3s;
+}
+#loadMore:hover {
+  color: blue;
+  background-color: #fff;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
 }
