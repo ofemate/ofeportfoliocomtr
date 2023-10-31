@@ -1,56 +1,15 @@
 
-body{background-color: rgb(238, 238, 238); padding:0px;margin:0px}
-
-@font-face {
-  font-family: 'charlotte'; /* Fontun adı */
-  src: url('CHARLOTTE-VMYLY.woff2') format('woff2'), /* Font dosyasının yolu ve formatı */
-}
-
-
 .grid-item { width:32%;padding:0.6% }
 .grid-item img{width: 100%; }
 @media(max-width:768px){
   .grid-item { width: 50%; padding:1%}
 }
 
-.footeraltta{
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
+
 .container {
     position: relative;
     width: 100%;
   }
-
-.footer{
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    font-size: 85%;
-}
-a.footer:link {
-    text-decoration: none;
-}
-a.footer:visited {
-    text-decoration: underline;
-}
-
-.footeraktif{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: black;
-    font-size: 85%;
-    text-decoration: underline;
-}
-
-.kategoribaslik{
-    text-align: center;
-    margin-top: 5%;
-    font-family: 'montserrat', sans-serif;
-}
 
 
 @media only screen and (min-width: 768px) {
@@ -67,14 +26,7 @@ a.footer:visited {
   .marginyuzde3anasayfa {margin-left: 2%;}
 }
 
-.kategoribaslikdegisken {
-    text-align: center;
-    color:rgb(0, 0, 0);
-    padding-top:5%;
-    font-family: 'montserrat', sans-serif;
-    letter-spacing: 5px;
-  }
- 
+
   @media only screen and (max-width: 768px) {
     .kategoribaslikdegisken {font-size:small; }
   }
@@ -82,25 +34,6 @@ a.footer:visited {
     .kategoribaslikdegisken {font-size:larger; }
   }
 
-.mail{
-    text-align: center;
-    font-family: 'montserrat', sans-serif;
-    margin-top: 150px;
-    letter-spacing: 2px;
-    font-weight:700;
-}
-.telefon{
-    text-align: center;
-    font-family: 'montserrat', sans-serif;
-    letter-spacing: 9px;
-    font-weight: 500;
-}
-
-@media only screen and (max-width: 768px) {
-  .mail {
-    margin-top: 250px;
-  }
-}
 
 @media only screen and (min-width:992px) {
     .hovereffect{
@@ -164,9 +97,6 @@ a.footer:visited {
     text-decoration: none;
 }
 
-.tümhaklarcontact{
-    margin-top: 23px;
-}
       
         .line {
           height: 1px;
@@ -245,68 +175,123 @@ a.footer:visited {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-
-
 .fancybox-caption {
   font-family: 'montserrat', sans-serif;
   letter-spacing: 3px;
 }
 
-.fotoofe{
-  width: 30%;
-  margin: auto;
-  display: block;
+
+
+
+
+
+
+
+
+nav {
+  margin-top: 30px;
+  text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .fotoofe{
-    width: 75%;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.hakkimdatext{
-  width: 464px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  text-align: justify; /* For Edge */
-  -moz-text-align-last: justify; /* For Firefox prior 58.0 */
-  text-align-last: justify;
+nav li {
+  padding: 19px;
+}
+
+/* navbar yazı rengi */
+nav a {
+  color: #212121;
+  text-decoration: none;
   font-family: 'montserrat', sans-serif;
-  font-weight: 600;
 }
 
-@media only screen and (max-width: 768px) {
-  .hakkimdatext{
-    width: 270px;
+nav a:hover {
+  color:rgb(103, 0, 172)
+}
+
+/* Dropdown stil */
+.dropdown {
+  position: relative;
+  text-align: center;
+}
+
+.dropdown:hover i{
+  transform: rotate(180deg);
+}
+
+.dropdown i{
+  transition: all ease-in-out 0.25s; 
+}
+
+.arrow-down::before {
+  font-family: 'Font Awesome 5 Free';
+}
+
+.submenu {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  opacity: 0.98;
+  transform: translateX(-38%);
+  z-index: 99 ;
+  position: absolute;
+  justify-content: center;
+  border-radius:14px;
+  margin-top: 16px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: none;
+  background-color: #ffffff;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  animation: submenu 0.2s ease-out   ;
+
+}
+
+/*aasad*/
+.submenu a{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.submenu li{
+  padding: 0px 0 0px 0px;
+}
+
+.dropdown:hover > ul {
+  display: grid;
+}
+
+.portfolio{
+  white-space: nowrap;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.dropdown:hover .portfolio i{
+  transform: none;
+}
+
+
+
+
+@keyframes submenu {
+  from {
+    transform: translate(-38%, -10px);
+    opacity: 0%;
+
+  }
+  to {
+    transform: translate(-38%, 0px);
+    opacity: 100%;
+
   }
 }
-
-.hakkimdatext2{
-  width: 464px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  text-align: justify; /* For Edge */
-  -moz-text-align-last: justify; /* For Firefox prior 58.0 */
-  text-align-last: justify;
-  font-family: 'montserrat', sans-serif;
-  margin-bottom: 78px;
-}
-
-@media only screen and (max-width: 768px) {
-  .hakkimdatext2{
-    width: 270px;
-  }
-}
-
-.uyarıkutusu{
-  height: 30px;
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3%;
-  background-color: aquamarine;
-}
-
-
