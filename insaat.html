@@ -27,150 +27,24 @@
 </head>
   </head>
   <body>
-    <div class="opacity"></div>
-
-
-      <a href="#menu" id="toggle"><span></span></a>
-
-    <div id="menu">
+    <nav>
       <ul>
-        <li><a href="anasayfa.html">Ana Sayfa</a></li>
-        <hr style="margin: 0;">
-        <li><a href="reklamcalismalari.html">Reklam Çalışmaları</a></li>
-        <hr style="margin: 0;">
-        <li><a href="fotografcalismaları.html">Fotoğraf Çekimleri</a></li>
-        <hr style="margin: 0;">
-        <li><a href="logocalismalari.html">Logo Çalışmaları</a></li>
-        <hr style="margin: 0;">
-        <li><a href="sosyalmedyacalismalari.html">Sosyal Medya Çalışmaları</a></li>
-        <hr style="margin: 0;">
-        <li><a href="hareketlicalismalar.html">Hareketli Çalışmalar</a></li>
-        <hr style="margin: 0;">
-        <li><a href="Diger.html">Diğer</a></li>
-        <hr style="margin: 0;">
-        <li><a href="contact.html">Contact</a></li>
-        <hr style="margin: 0;">
-        <li><a href="insaat.html">Hakkımda</a></li>
-
+        <li><a class="navaktif" href="anasayfa yeni.html">Home</a></li>
+        <li class="dropdown">
+          <a href="tümcalismalar.html">Portfolio <i class="fas fa-solid fa-angle-down fa-2xs"></i></a>
+          <ul class="submenu">
+            <li><a class="portfolio" href="tümcalismalar.html"><i class="fas fa-solid fa-angle-right fa-2xs"></i>Social Media Designs</a></li>
+            <li><a class="portfolio" href="tümcalismalar.html"><i class="fas fa-solid fa-angle-right fa-2xs"></i>Marketing Designs</a></li>
+            <li><a class="portfolio" href="tümcalismalar.html"><i class="fas fa-solid fa-angle-right fa-2xs"></i>Motion Graphics</a></li>
+            <li><a class="portfolio" href="tümcalismalar.html"><i class="fas fa-solid fa-angle-right fa-2xs"></i>Logo Designs</a></li>
+            <li><a class="portfolio" href="tümcalismalar.html"><i class="fas fa-solid fa-angle-right fa-2xs"></i>Product Photography</a></li>
+            <li><a class="portfolio" href="tümcalismalar.html"><i class="fas fa-solid fa-angle-right fa-2xs"></i>Other</a></li>
+          </ul>
+        </li>
+        <li><a st href="insaat.html">About Me</a></li>
+        <li><a href="insaat.html">Contact</a></li>
       </ul>
-    </div>
-    
-    <style>
-  .opacity{background-color: rgba(0,0,0,0);position: fixed;left:0px;top:0px;width: 100%;height: 100%;z-index: 1;display: none;}
-      .opacity.show{display: block;}
-
-
-    #toggle {
-      position: fixed;
-      display: block;
-      width: 28px;
-      height: 30px;
-      margin-top: 5%;
-      margin-left: 2%;
-      z-index: 999;
-    }
-    
-    #toggle span:after,
-    #toggle span:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: -9px;
-    }
-    #toggle span:after{
-      top: 9px;
-    }
-    #toggle span {
-      position: relative;
-      display: block;
-    }
-    
-    #toggle span,
-    #toggle span:after,
-    #toggle span:before {
-      width: 67%;
-      height:4px;
-      background-color: #ffffff;
-      transition: all 0.3s;
-      backface-visibility: hidden;
-      border-radius: 0px;
-      
-    }
-    
-    #toggle.on span {
-      background-color: transparent;
-    }
-    #toggle.on span:before {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-    #toggle.on span:after {
-      transform: rotate(-45deg) translate(7px, -8px);
-    }
-    #toggle.on + #menu {
-      opacity: 1;
-      visibility: visible;
-    }
-    
-    #menu {
-      position: fixed;
-      z-index: 998;
-      color: #999;
-      width: 270px;
-      margin-top: 6%;
-      padding: 1%;
-      margin-left: 2%;
-      font-family: 'montserrat', sans-serif;
-      text-align: start;
-      border-radius: 9px;
-      background: rgba(255, 255, 255, 0.962);
-      box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity .2s;
-    }
-    #aktif{
-     color: black;
-     font-weight: 600;
-     text-decoration: underline;
-    }
-    li #aktif:hover,
-    li #aktif:focus {
-      background: #8300c4;
-      color: #fff;
-    }
-    
-    #CV{
-      color: #ffffff;
-      font-weight: 600;
-      background: linear-gradient(to right, #8300c4, rgb(255, 255, 255));
-      border-radius: 5%;
-    }
-    li #CV:hover,
-    li #CV:focus {
-      background: linear-gradient(to right, #250037, rgb(218, 193, 255));
-      border-radius: 5%;
-    }
-
-    ul, li, li a {
-      list-style: none;
-      display: block;
-      margin: 0;
-      padding: 0;
-    }
-    li a {
-      padding: 5px;
-      font-weight: 400;
-      color: #606060;
-      text-decoration: none;
-      transition: all .2s;
-    }
-    li a:hover,
-    li a:focus {
-      background: #313131;
-      color: #fff;
-      margin-left: 5%;
-    } 
-    </style>
+    </nav>
   
     <div style="margin-top: 0%;" class="grid insaatwebke">
       <div class="grid-item "><img src="img/insaat.jpg" alt=""></div>
@@ -180,28 +54,7 @@
       <div class="grid-item "><img src="img/insaatmobil.png" alt=""></div>
     </div>
 
-   <!-- FOOTER BY OFE ÜSTE YAPIŞIK-->
-<div class="footerustinsaat">
-  <div class="footeranasayfa">
-    <div style="margin-top: 15px; text-align: center; flex-wrap: wrap; width:max-content; margin-left: auto; margin-right: auto; max-width: 100%;">
-     <div style="padding-right: 30px; padding-left: 30px;">
-        <a class="footer" href="anasayfa.html">ana sayfa</a>
-        <a class="footer" href="reklamcalismalari.html"> reklam çalışmaları </a>
-        <a class="footer" href="fotografcalismaları.html">fotoğraf çalışmaları</a>
-        <a class="footer" href="logocalismalari.html">logo çalışmaları</a>
-        <a class="footer" href="sosyalmedyacalismalari.html">sosyal medya çalışmaları</a>
-        <a class="footer" href="hareketlicalismalar.html">hareketli çalışmalar</a>
-        <a class="footer" href="Diger.html">diğer</a>
-    </div>
-    <div style="text-decoration: underline; margin-top: 1%; margin-bottom: 2%; text-align:center;width:100%;">
-      <a class="footeraktif"  href="contact.html">Contact</a>
-      <a style="color: rgb(245, 245, 455);" class="footeraktif"  href="">......</a>
-      <a class="footeraktif"  href="insaat.html">Hakkımda</a>
-    </div>
-  </div>
-</div>
-<p class="tümhaklar">©2023 Tüm haklarını sakladım.</p>
-</div>
+  
 
     <!--Loader-->
     <div id="loading">

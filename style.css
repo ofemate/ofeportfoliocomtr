@@ -89,12 +89,30 @@
   .hovercalismalar:hover {
     transform: scale(1.03);
   }
+
+  .hovercalismalar:hover .overlay{
+    opacity: 0;
+  }
+
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    opacity: 0.7;
+    transform: scale(0.97);
+    transition: all 0.3s ease-in-out;
+  }
   
 .tümhaklar{
     text-align: center;
     font-family: 'montserrat', sans-serif;
     font-size:78%;
     text-decoration: none;
+    margin-top: 60px;
+    color: #ebebeb;
 }
 
       
@@ -262,10 +280,7 @@ a.footer:visited {
 
 
 
-
-
-
-
+/*NAVBAR*/
 
 nav {
   margin-top: 30px;
@@ -284,7 +299,8 @@ nav li {
   padding: 19px;
 }
 
-/* navbar yazı rengi */
+
+
 nav a {
   color: #212121;
   text-decoration: none;
@@ -295,7 +311,6 @@ nav a:hover {
   color:rgb(103, 0, 172)
 }
 
-/* Dropdown stil */
 .dropdown {
   position: relative;
   text-align: center;
@@ -315,13 +330,13 @@ nav a:hover {
 
 .submenu {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  opacity: 0.98;
+  opacity: 0.96;
   transform: translateX(-38%);
   z-index: 99 ;
   position: absolute;
   justify-content: center;
   border-radius:14px;
-  margin-top: 16px;
+  margin-top: 7px;
   padding-left: 60px;
   padding-right: 60px;
   display: none;
@@ -334,7 +349,6 @@ nav a:hover {
 
 }
 
-/*aasad*/
 .submenu a{
   display: flex;
   align-items: center;
@@ -349,6 +363,23 @@ nav a:hover {
   display: grid;
 }
 
+@media (max-width: 400px){
+  nav{
+    margin-top: 10px;
+  }
+
+  nav li{
+    padding: 10px;
+  }
+
+  .submenu{
+    grid-template-columns: repeat(1, 1fr);
+    transform: translateX(-18%);
+    padding: 20px 20px 20px 10px;
+    animation: submenuMobil 0.2s ease-out;
+  }
+}
+
 .portfolio{
   white-space: nowrap;
   padding-left: 30px;
@@ -358,8 +389,6 @@ nav a:hover {
 .dropdown:hover .portfolio i{
   transform: none;
 }
-
-
 
 
 @keyframes submenu {
@@ -375,39 +404,439 @@ nav a:hover {
   }
 }
 
+@keyframes submenuMobil {
+  from {
+    transform: translate(-18%, -10px);
+    opacity: 0%;
 
-.content {
-  height: 100px;
-  width: 45%;
-  color: #fff;
-  font-size: 24px;
-  line-height: 100px; /* centering text just for view */
-  text-align: center;
-  background-color: grey;
-  margin: 5px;
-  border: 1px solid lightgrey;
-  display: none;
+  }
+  to {
+    transform: translate(-18%, 0px);
+    opacity: 100%;
+
+  }
 }
-#loadMore {
+
+.navaktif{
+  color: rgb(97, 0, 158);
+  font-weight: 500;
+}
+
+/*NAVBAR*/
+
+
+
+
+/*ANASAYFA*/
+
+
+
+.siyahkısım{
+  background: linear-gradient(to right bottom, rgb(21, 21, 21), rgb(2, 2, 2));
+  padding-top: 30px;
+  padding-bottom: 8px;
+}
+
+
+
+
+.viewall{
+  margin-top: 60px;
+  text-align:center;
+  font-size: 1.4rem;
+  font-weight: 200;
+  font-family: 'montserrat', sans-serif;
   width: 200px;
-  color: #fff;
-  display: block;
-  text-align: center;
-  margin: 20px auto;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  background-color: blue;
-  transition: .3s;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all ease-out 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 38px;
 }
-#loadMore:hover {
-  color: blue;
-  background-color: #fff;
-  border: 1px solid blue;
+
+@media (max-width: 400px){
+  .siyahkısım{
+    padding-top: 10px;
+  }
+
+  .viewall{
+    margin-top: 10px;
+  }
+}
+
+.viewall:hover{
+  color: blueviolet;
+  font-size: 1.5rem;
+}
+
+.beyazkısım{
+  height: 23rem;
+  position: relative;
+}
+
+@media(max-width: 700px){
+  .beyazkısım{
+    height: 220px;
+  }
+}
+
+.beyazkısım img{
+  position: absolute;
+  top: -30%;
+  right: 1rem;
+  z-index: 10;
+  width: 800px;
+}
+
+@media(min-width: 1750px){
+  .beyazkısım img{
+    width: 970px;
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+}
+
+
+@media(max-width: 1450px){
+  .beyazkısım img{
+    width: 700px;
+  }
+}
+
+@media(max-width: 1285px){
+  .beyazkısım img{
+    width: 600px;
+    top: -20%
+  }
+}
+
+@media(max-width: 1050px){
+  .beyazkısım img{
+    width: 500px;
+    top: -20%;
+    margin-right: -50px;
+  }
+}
+
+@media(max-width: 1050px){
+  .beyazkısım img{
+    width: 500px;
+    top: -20%;
+    margin-right: -120px;
+  }
+}
+
+@media(max-width: 700px){
+  .beyazkısım img{
+    width: 500px;
+    top: -20%;
+    margin-right: -160px;
+  }
+}
+
+@media(max-width: 580px){
+  .beyazkısım img{
+    width: 300px;
+    top: -10%;
+    margin-right: -70px;
+  }
+}
+
+@media(max-width: 420px){
+  .beyazkısım img{
+    width: 250px;
+    top: -10%;
+    margin-right: -70px;
+  }
+}
+
+@media(max-width: 375px){
+  .beyazkısım img{
+    width: 250px;
+    top: 10%;
+    margin-right: -90px;
+  }
+}
+
+.baslik{
+  margin-top: 100px;
+  margin-left: 170px;
+}
+
+
+
+
+#omerfarukerdogan{
+font-family: 'montserrat', sans-serif;
+font-weight: 600;
+font-size: 400%;
+}
+
+#graphicphotography{
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 180%;
+}
+
+#thisismyworld{
+  font-family: 'montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 400%;
+  margin-top: -12px;
+}
+
+@media (min-width: 1750px){
+  .baslik{
+    max-width: 90%;
+    margin: 120px auto auto 250px;
+  }
+
+  #omerfarukerdogan{
+    font-size: 4.4rem;
+    margin-bottom: -1px;
+  }
+
+  #graphicphotography{
+    font-size: 3rem;
+  }
+
+  #thisismyworld{
+    font-size: 4.4rem;
+    margin-top: -8px;
+  }
+}
+
+@media (max-width: 1360px){
+  .baslik{
+    max-width: 90%;
+    margin: 120px auto auto 120px;
+  }
+
+  #omerfarukerdogan{
+    font-size: 3.4rem;
+    margin-bottom: -1px;
+  }
+
+  #graphicphotography{
+    font-size: 2rem;
+  }
+
+  #thisismyworld{
+    font-size: 3.4rem;
+    margin-top: -8px;
+  }
+}
+
+@media (max-width: 1140px){
+  .baslik{
+    max-width: 90%;
+    margin: 120px auto auto 120px;
+  }
+
+  #omerfarukerdogan{
+    font-size: 3rem;
+    margin-bottom: 4px;
+  }
+
+  #graphicphotography{
+    font-size: 2rem;
+  }
+
+  #thisismyworld{
+    font-size: 3.6rem;
+    margin-top: -18px;
+  }
+} 
+
+@media (max-width: 1050px){
+  .baslik{
+    max-width: 90%;
+    margin: 120px auto auto 80px;
+  }
+
+  #omerfarukerdogan{
+    font-size: 3rem;
+    margin-bottom: 4px;
+  }
+
+  #graphicphotography{
+    font-size: 2rem;
+  }
+
+  #thisismyworld{
+    font-size: 3.6rem;
+    margin-top: -18px;
+  }
+} 
+
+@media (max-width: 916px){
+  .baslik{
+    max-width: 90%;
+    margin: 120px auto auto 80px;
+  }
+
+  #omerfarukerdogan{
+    font-size: 2.6rem;
+    margin-bottom: 4px;
+  }
+
+  #graphicphotography{
+    font-size: 1.6rem;
+  }
+
+  #thisismyworld{
+    font-size: 3rem;
+    margin-top: -18px;
+  }
+} 
+
+@media (max-width: 850px){
+  .baslik{
+    max-width: 90%;
+    margin: 120px auto auto 70px;
+  }
+
+  #omerfarukerdogan{
+    font-size: 2.6rem;
+    margin-bottom: 4px;
+  }
+
+  #graphicphotography{
+    font-size: 1.6rem;
+  }
+
+  #thisismyworld{
+    font-size: 3rem;
+    margin-top: -18px;
+  }
+} 
+
+@media (max-width: 750px){
+  .baslik{
+    max-width: 90%;
+    
+    margin: 70px auto auto 36px;
+  }
+
+  #omerfarukerdogan{
+    font-size: 2rem;
+    margin-bottom: -1px;
+  }
+
+  #thisismyworld{
+    font-size: 2rem;
+    margin-top: -8px;
+  }
+}
+
+@media (max-width: 580px){
+  .baslik{
+    max-width: 90%;
+    
+    margin: 40px auto auto 36px;
+  }
+
+  #omerfarukerdogan{
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+  }
+
+  #graphicphotography{
+    font-size: 1rem;
+  }
+
+
+  #thisismyworld{
+    font-size: 2rem;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 450px){
+  .baslik{
+    max-width: 90%;
+    
+    margin: 40px auto auto 36px;
+  }
+
+  #omerfarukerdogan{
+    font-size: 1.4  rem;
+    margin-bottom: 5px;
+  }
+
+  #graphicphotography{
+    font-size: 0.8rem;
+  }
+
+
+  #thisismyworld{
+    font-size: 1.7rem;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 400px){
+  .baslik{
+    max-width: 90%;
+    
+    margin: 40px auto auto 20px;
+  }
+
+  #omerfarukerdogan{
+    font-size: 1.4  rem;
+    margin-bottom: 5px;
+  }
+
+  #graphicphotography{
+    font-size: 0.8rem;
+  }
+
+
+  #thisismyworld{
+    font-size: 1.7rem;
+    margin-top: -10px;
+  }
+}
+
+
+@media (max-width: 375px){
+  .baslik{
+    max-width: 90%;
+    
+    margin: 40px auto auto 15px;
+  }
+
+  #omerfarukerdogan{
+    font-size: 1.5  rem;
+    margin-bottom: 3px;
+  }
+
+  #graphicphotography{
+    font-size: 1rem;
+  }
+
+
+  #thisismyworld{
+    font-size: 1.8rem;
+    margin-top: -12px;
+  }
+}
+
+
+.siyahkutu{
+  background: linear-gradient(to bottom, transparent, black);
+}
+
+.viewAllButon{
   text-decoration: none;
+  color: blueviolet;
+
 }
-.noContent {
-  color: #000 !important;
-  background-color: transparent !important;
-  pointer-events: none;
-}
+
+
+
+
+
+/*ANASAYFA*/
+
