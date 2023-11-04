@@ -115,6 +115,27 @@
     color: #ebebeb;
 }
 
+.tümhaklarsiyah{
+  text-align: center;
+  font-family: 'montserrat', sans-serif;
+  font-size:78%;
+  text-decoration: none;
+  margin-top: 60px;
+  color: #1d1d1d;
+}
+
+.tümhaklarsiyahaltta{
+  text-align: center;
+  font-family: 'montserrat', sans-serif;
+  font-size:78%;
+  bottom: 0;
+ left: 0;
+ right: 0;
+  position: fixed;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
       
         .line {
           height: 1px;
@@ -244,7 +265,7 @@ a.footer:visited {
 .mail{
   text-align: center;
   font-family: 'montserrat', sans-serif;
-  margin-top: 150px;
+  margin: 14% auto auto auto;
   letter-spacing: 2px;
   font-weight:700;
 }
