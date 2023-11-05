@@ -350,6 +350,7 @@
     // =============================================
 
     mobile: {
+      clickOutside: "close"
       preventCaptionOverlap: false,
       idleTime: false,
       clickContent: function (current, event) {
