@@ -106,4 +106,23 @@ window.onload = function() {
     })    
      
 
+// JavaScript
+window.onload = function() {
+    var loading = document.getElementById('loading');
+    var loadingBar = document.createElement('div');
+    loadingBar.className = 'loading-bar';
+    loading.appendChild(loadingBar);
+   
+    var width = 0;
+    var interval = setInterval(function() {
+      if (width >= 100) {
+        clearInterval(interval);
+        loading.style.display = 'none';
+      } else {
+        width++;
+        loadingBar.style.width = width + '%';
+      }
+    }, 50);
+   };
 
+   
