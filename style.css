@@ -129,6 +129,19 @@
   color: #1d1d1d;
 }
 
+.tümhaklarbeyazaltta{
+  text-align: center;
+  font-family: 'montserrat', sans-serif;
+  font-size:78%;
+  bottom: 0;
+ left: 0;
+ right: 0;
+  position: fixed;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
       
         .line {
           height: 1px;
@@ -292,6 +305,8 @@ nav a {
   font-family: 'montserrat', sans-serif;
 }
 
+
+
 nav a:hover {
   color:rgb(103, 0, 172)
 }
@@ -331,7 +346,27 @@ nav a:hover {
   padding-top: 20px;
   padding-bottom: 20px;
   animation: submenu 0.2s ease-out   ;
+}
 
+
+.submenublack {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  opacity: 0.96;
+  transform: translateX(-38%);
+  z-index: 99 ;
+  position: absolute;
+  justify-content: center;
+  border-radius:14px;
+  margin-top: 7px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: none;
+  background-color: #1f1f1f;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  animation: submenu 0.2s ease-out   ;
 }
 
 .submenu a{
@@ -867,3 +902,47 @@ font-size: 400%;
     height: 2px;
     background: #333;
    }
+
+
+
+
+
+
+
+
+@media (max-width: 599px){
+  .yapimasamasi{
+    height: 50rem;
+    max-height: 17rem;
+     margin: 8rem auto auto auto;
+     display: block;
+  }
+}
+
+@media (min-width: 600px){
+  .yapimasamasi{
+    height: 50rem;
+    max-height: 28rem;
+     margin: -1rem auto auto auto;
+     display: block;
+  }
+}
+
+@media (min-width: 1000px){
+  .yapimasamasi{
+    height: 50rem;
+    max-height: 34rem;
+     margin: auto auto auto auto;
+     display: block;
+  }
+}
+
+
+@media (min-width: 1500px){
+  .yapimasamasi{
+    height: 50rem;
+    max-height: 40rem;
+     margin: 3rem auto auto auto;
+     display: block;
+  }
+}
