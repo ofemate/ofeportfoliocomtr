@@ -946,3 +946,7 @@ font-size: 400%;
      display: block;
   }
 }
+
+body {
+  overflow-x: hidden;
+}
