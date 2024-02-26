@@ -329,7 +329,7 @@ nav a:hover {
 }
 
 .submenu {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(44, 44, 47, 0.3) 0px 7px 29px 0px;
   opacity: 0.96;
   transform: translateX(-38%);
   z-index: 99 ;
@@ -426,12 +426,12 @@ nav a:hover {
 
 @keyframes submenuMobil {
   from {
-    transform: translate(-18%, -10px);
+    transform: translate(0%, -10px);
     opacity: 0%;
 
   }
   to {
-    transform: translate(-18%, 0px);
+    transform: translate(0%, 0px);
     opacity: 100%;
 
   }
@@ -553,3 +553,13 @@ nav a:hover {
   width: 120px;
 }
 
+@media (max-width: 800px) {
+  .rekorlogo{
+    width: 80px;
+  }
+}
+
+.navmobiller{
+  font-size: 80%;
+  margin-bottom: 40px;
+}
