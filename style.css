@@ -559,7 +559,9 @@ nav a:hover {
   }
 }
 
-.navmobiller{
-  font-size: 80%;
-  margin-bottom: 40px;
+
+@media (max-width: 800px) {
+  .navmobiller{
+    font-size: 80%;
+    margin-bottom: 40px;  }
 }
