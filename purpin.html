@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfePortfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-style.css">
+
+    <link rel="stylesheet" href="js/jquery.fancybox.css">
+</head>
+<body>
+    <div class="global-container">
+
+    <header class="navbar">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html" class="active">portfolyo</a></li>
+                <li><a href="contact.html">iletişim</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="img/Kulup-Yatay-Logo.png" alt="Kulüp Interactive Lab Logo"> 
+            <span></span>
+        </div>
+    </header>
+            <div class="work-grid is-loading web">
+                <a data-fancybox="gallery" href="img/Projects/Purpin/1.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/1.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/2.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/2.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/3.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/3.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/4.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/4.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/5.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/5.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/6.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/6.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/7.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/7.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/8.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/8.png" ></a>
+            </div>
+
+            <div class="work-grid is-loading mobil">
+                <a data-fancybox="gallery" href="img/Projects/Purpin/1mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/1mobil.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/2mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/2mobil.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/3mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/3mobil.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/4mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/4mobil.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/5mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/5mobil.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/6mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/6mobil.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/7mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/7mobil.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/8mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/8mobil.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/9mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/9mobil.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/10mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/10mobil.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/11mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/11mobil.png" ></a>
+                <a data-fancybox="gallery" href="img/Projects/Purpin/12mobil.png" class="work-grid-item hovercalismalar" ><img src="img/Projects/Purpin/12mobil.png" ></a>
+            </div>
+      
+      
+      
+    
+            <footer class="site-footer">
+            <p>©2023 Tüm haklarını sakladım.</p>
+        </footer>
+        
+
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    
+    <script src="script.js"></script>
+
+<script>
+        window.addEventListener('load', function() {
+            
+            if (window.jQuery) { 
+                
+                var $grid = $('.work-grid'); // .is-loading sınıfına sahip
+
+                // 1. ISOTOPE'U BAŞLAT (FİLTRESİZ VE ANİMASYONSUZ)
+                $grid.isotope({
+                    itemSelector: '.work-grid-item',
+                    percentPosition: true,
+                    layoutMode: 'masonry', 
+                    filter: '*', // Önce her şeyi göster
+                    
+                    // TÜM ANİMASYON KODLARI SİLİNDİ
+                    transitionDuration: 0 
+                });
+
+
+                // 3. IZGARAYI ANINDA GÖRÜNÜR YAP
+                $grid.removeClass('is-loading');
+                
+                // 4. 'setTimeout' bloğu SİLİNDİ. 
+                // Artık animasyonları geri açmıyoruz.
+
+                // 5. FİLTRE BUTONLARINA TIKLAMA OLAYI EKLE
+                $('.filter-button-group').on('click', 'button', function() {
+                    var filterValue = $(this).attr('data-filter');
+                    
+                    // Animasyonsuz filtrele
+                    $grid.isotope({ filter: filterValue }); 
+                    
+                    $('.filter-btn').removeClass('is-checked');
+                    $(this).addClass('is-checked');
+                });
+                
+                // 6. FANCYBOX'I BAŞLAT
+                $('[data-fancybox="gallery"]').fancybox({
+                    buttons: [ "zoom", "close" ],
+                    loop: true,
+                    protect: true
+                });
+
+            } else {
+                console.error("jQuery yüklenemedi, galeri başlatılamıyor.");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -339,7 +339,7 @@ body {
 }
 
 .work-grid {
-margin-left: 8%;
+margin-left: 20%;
 }
 
 /* Isotope yüklenirken ızgarayı geçici olarak gizle (zıplamayı önler) */
@@ -349,10 +349,9 @@ margin-left: 8%;
 
 /* Izgara öğesi (her bir resim kutusu) */
 .work-grid-item {
-    width: 30.33%; 
-    padding: 0.5%; /* Resimler arası boşluk */
+    width: 75%; 
     box-sizing: border-box;
-    margin-bottom: 0px; /* Dikey boşluk */
+    margin-bottom: 0.5%; /* Dikey boşluk */
 }
 
 /* Izgara öğesindeki resim */
@@ -383,15 +382,14 @@ margin-left: 8%;
     .other-works-section {
         /* HİZALAMA İÇİN: Mobildeki content-wrapper ile aynı (20px) */
         padding: 0 10px;
-        margin-top: 40px;
-        margin-left: -4.1%;
-        
+        margin-top: 40px;        
     }
     
     /* Mobil (2 sütunlu düzen) */
 .work-grid-item {
-        width: 50%;
+        width: 115%;
         box-sizing: border-box; 
+        margin-left: -19.9%;
         
         /* DÜZELTME: 
            padding: 8px; (her yön) yerine,
@@ -400,7 +398,7 @@ margin-left: 8%;
         padding: 0 4px; /* Üst/Alt: 0, Sağ/Sol: 4px */
 
         /* Dikey boşluğu (satırlar arası) buradan ayarla */
-        margin-bottom: 8px; /* 5px idi, 8px yaptık */
+        margin-bottom: 5px; /* 5px idi, 8px yaptık */
     }
 }
 
@@ -457,16 +455,6 @@ border-bottom: 1px solid #000;
 }
 
 
-/* --- 8. FİLTRE BUTONLARI MOBİL UYUMLULUK --- */
-@media (max-width: 768px) {
-    .filter-controls {
-        padding: 0 20px; /* Mobildeki content-wrapper ile hizalı */
-    }
-    .filter-btn {
-        font-size: 13px;
-        margin-right: 15px;
-    }
-}
 
 
 /* --- 9. FOOTER STİLLERİ --- */
@@ -497,27 +485,7 @@ border-bottom: 1px solid #000;
 }
 
 
-.mail{
-  text-align: center;
-  font-family: 'montserrat', sans-serif;
-  margin: 14% auto auto auto;
-  letter-spacing: 2px;
-  font-weight:700;
-}
-.telefon{
-  text-align: center;
-  font-family: 'montserrat', sans-serif;
-  letter-spacing: 9px;
-  font-weight: 500;
-  text-decoration: none;
-  margin-top: 10px;
-}
 
-@media only screen and (max-width: 768px) {
-.mail {
-  margin-top: 250px;
-}
-}
 
 /* --- 10. FOOTER'I EN ALTA SABİTLEME KURALI (Düzeltilmiş) --- */
 
@@ -545,4 +513,24 @@ body.page-no-scroll .site-footer {
     width: 100%;
     text-align: center;
 
+}
+
+@media (max-width: 768px) {
+    .mobil{
+        display:block;
+        }
+
+    .web{
+        display: none;
+    }  
+}
+
+@media (min-width: 768px) {
+    .mobil{
+        display:none;
+        }
+
+    .web{
+        display: block;
+    }  
 }
