@@ -110,6 +110,7 @@ body {
     scrollbar-width: none;
     -ms-overflow-style: none;
     box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
     
     /* HİZALAMA VE SİMETRİK BOŞLUK: */
     padding-left: 0px;  /* Boşluklar artık project-container içinde */
@@ -545,4 +546,11 @@ body.page-no-scroll .site-footer {
     width: 100%;
     text-align: center;
 
+}
+
+/* Resimlerin sürüklenmesini engelle (Drag sorununu çözer) */
+.project-card img {
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
 }

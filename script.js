@@ -17,18 +17,20 @@ document.addEventListener('DOMContentLoaded', function() {
     let scrollLeftStart;
     let targetScroll = 0;
     let currentScroll = 0;
-    let easing = 0.1;
+    let easing = 0.08; 
     let maxScrollLeft = 0;
-    let isScrollable = false; // Kaydırmanın aktif olup olmadığını tutar
+    let isScrollable = false; 
+    let isAnimating = false;
+    
+    // Tıklama ile Sürüklemeyi ayırt etmek için başlangıç noktası
+    let clickStartX = 0;
 
     // --- YARDIMCI FONKSİYONLAR ---
     function updateMaxScroll() {
-        // Genişliği hesapla
         maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
         maxScrollLeft = Math.max(0, maxScrollLeft); 
-        isScrollable = maxScrollLeft > 0; // 'true' veya 'false' olarak ayarla
+        isScrollable = maxScrollLeft > 0;
         
-        // Sadece İMLEÇ ve GÖSTERGEYİ yönet
         if (isScrollable) {
             wrapper.style.cursor = 'grab';
             indicator.style.display = 'flex';
@@ -57,54 +59,84 @@ document.addEventListener('DOMContentLoaded', function() {
         thumb.style.left = `${thumbLeft}px`;
     }
 
-    // --- OLAY DİNLEYİCİLERİ (DÜZELTİLMİŞ) ---
+    // --- LİNKLERİ KORUMA ---
+    const links = wrapper.querySelectorAll('a');
     
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // DÜZELTME BURADA:
+            // Eğer scroll kapalıysa (büyük ekran), kontrol yapma, direkt linki aç.
+            if (!isScrollable) return; 
+
+            // Sadece scroll varsa "sürükleme mi tıklama mı" kontrolü yap
+            if (Math.abs(e.pageX - clickStartX) > 5) {
+                e.preventDefault(); 
+                e.stopPropagation(); 
+            }
+        });
+    });
+
+
+    // --- OLAY DİNLEYİCİLERİ ---
+
+    // 1. SYNC 
+    wrapper.addEventListener('scroll', () => {
+        if (!isDown && !isAnimating) {
+            currentScroll = wrapper.scrollLeft;
+            targetScroll = wrapper.scrollLeft;
+            updateScrollThumb(currentScroll);
+        }
+    });
+
+    // 2. MOUSE TIKLAMA 
     wrapper.addEventListener('mousedown', (e) => {
-        // DÜZELTME: Sadece kaydırılabiliyorsa sürüklemeyi başlat
-        if (!isScrollable) return; 
-        
+        if (!isScrollable) return;
         isDown = true;
+        isAnimating = true; 
         wrapper.classList.add('active');
-        currentScroll = wrapper.scrollLeft; 
+        wrapper.style.cursor = 'grabbing';
+        
+        // Tıklama başlangıç noktasını kaydet
+        clickStartX = e.pageX;
+
+        currentScroll = wrapper.scrollLeft;
         targetScroll = currentScroll;
         startX = e.pageX - wrapper.offsetLeft;
-        scrollLeftStart = targetScroll; 
-        e.preventDefault();
+        scrollLeftStart = targetScroll;
+        
+        e.preventDefault(); 
     });
 
-    wrapper.addEventListener('mouseleave', () => {
-        isDown = false;
-        wrapper.classList.remove('active');
+    // 3. MOUSE BIRAKMA 
+    window.addEventListener('mouseup', () => {
+        if (isDown) {
+            isDown = false;
+            wrapper.classList.remove('active');
+            wrapper.style.cursor = 'grab';
+        }
     });
 
-    wrapper.addEventListener('mouseup', () => {
-        isDown = false;
-        wrapper.classList.remove('active');
-    });
-
-    wrapper.addEventListener('mousemove', (e) => {
+    // 4. MOUSE HAREKETİ
+    window.addEventListener('mousemove', (e) => {
         if (!isDown) return;
         e.preventDefault();
+        
         const x = e.pageX - wrapper.offsetLeft;
-        const walk = (x - startX);
+        const walk = (x - startX) * 1.5; 
         targetScroll = scrollLeftStart - walk;
         targetScroll = clamp(targetScroll);
     });
 
+    // 5. TEKERLEK
     wrapper.addEventListener('wheel', (event) => {
-        // *** ANA DÜZELTME BURADA ***
-        // Sadece yatay kaydırma aktifse dikey scroll'u engelle
-        if (!isScrollable) {
-            return; // Yatay scroll yoksa, hiçbir şey yapma (dikey scroll'a izin ver)
-        }
-        
-        // Sadece yatay scroll aktifken dikey scroll'u engelle
-        event.preventDefault(); 
-        
+        if (!isScrollable) return; 
+        event.preventDefault();
+        isAnimating = true;
         targetScroll += event.deltaY * 1.0;
         targetScroll = clamp(targetScroll);
     });
 
+    // 6. RESIZE
     window.addEventListener('resize', () => {
         updateMaxScroll(); 
         targetScroll = clamp(targetScroll); 
@@ -112,21 +144,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     window.addEventListener('load', () => {
-        updateMaxScroll(); // Her şey yüklendikten sonra tekrar hesapla
+        updateMaxScroll();
     });
 
     // --- ANA ANİMASYON DÖNGÜSÜ ---
     function smoothScrollLoop() {
         let delta = targetScroll - currentScroll;
         
-        if (Math.abs(delta) < 0.5) {
-            currentScroll = targetScroll;
-        } else {
+        if (Math.abs(delta) > 0.5) {
             currentScroll += delta * easing;
+            wrapper.scrollLeft = currentScroll;
+            updateScrollThumb(currentScroll);
+            isAnimating = true; 
+        } else {
+            isAnimating = false;
         }
-        
-        wrapper.scrollLeft = currentScroll;
-        updateScrollThumb(currentScroll); 
         
         requestAnimationFrame(smoothScrollLoop);
     }
