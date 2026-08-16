@@ -71,274 +71,21 @@ body {
     font-size: 14px;
 }
 
-/* --- 2. BAŞLIKLAR (YAZILAR) --- */
-.content-wrapper {
-    width: 100%;
-    margin: 40px 0 0 0;
-    text-align: left;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.headline-section h1 {
-    font-size: 48px;
-    font-weight: 300;
-    margin: 0;
-    color: #555;
-    line-height: 1.1;
-}
-
-.headline-section p {
-    font-size: 20px;
-    font-weight: 300;
-    color: #888;
-    margin-top: 2px;
-}
-
-/* --- 3. YATAY SCROLL BÖLÜMÜ (KARTLAR) --- */
-.portfolio-scroll-section {
-    width: 100%;
-    margin-top: 0px;
-    padding: 0;
-}
-
-.scroll-wrapper {
-    /* DEĞİŞİKLİK: 'hidden' değil, 'auto' olmalı. Tarayıcı karar versin. */
-    overflow-x: auto; 
-    overflow-y: hidden;
-    width: 100%;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    box-sizing: border-box;
-    
-    /* HİZALAMA VE SİMETRİK BOŞLUK: */
-    padding-left: 0px;  /* Boşluklar artık project-container içinde */
-    padding-right: 0px;
-}
-.scroll-wrapper::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
-}
-
-.scroll-wrapper.active {
-    cursor: grabbing;
-    user-select: none;
-}
-
-.project-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: max-content;
-    gap: 15px;
-    padding: 20px 0;
-    
-    /* BOŞLUKLARIN DOĞRU YERİ BURASI: */
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-/* --- KART STİLLERİ (TEMİZLENMİŞ VE DÜZELTİLMİŞ) --- */
-
-.project-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Öğeleri yukarıya hizala */
-    align-items: flex-start; /* Öğeleri yatayda ortala */
-    
-    width: 350px;
-    height: 650px;
-    padding: 30px; /* İç boşluk */
-    background-color: #f7f7f7;
-    
-    flex-shrink: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Logoyu saran div'i stillendir */
-.project-logo-wrapper {
-    width: 100%;
-    max-height: 80px; /* Logonun max yüksekliği */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-shrink: 0;
-    margin-top: 9px;
-}
-
-/* Logonun kendisi (div'in içinde) */
-.project-logo-wrapper img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-/* Açıklama metni */
-.project-card p {
-    font-size: 16px;
-    color: #959595;
-    margin-top: 10px; /* Logo ile arasına boşluk */
-    text-align: left;
-    flex-shrink: 0;
-    font-weight: 300;
-}
-
-/* (Daha sonra bir ana görsel eklersen, 
-   o da buraya flex-grow: 1 ile gelip kalan boşluğu doldurur) */
-
-/* --- 4. SCROLL GÖSTERGESİ (BOX) --- */
-.scroll-indicator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.scroll-track {
-    width: 50px;
-    height: 9px;
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    position: relative;
-}
-
-.scroll-thumb {
-    width: 50px;
-    height: 100%;
-    background-color: #888;
-    border-radius: 4px;
-    position: absolute;
-    left: 0;
-}
-
-/* Ana proje görselleri için stiller */
-.card-main-image {
-    /* 1. Görseli sağa hizala (soldaki hizalamayı geçersiz kılar) */
-    align-self: flex-end;
-    max-width: 100%;    
-    /* 3. Boyutunu ayarla (artık %100 değil) */
-    width: auto;
-    height: auto;
-    object-fit: contain; /* Boyutu koru, sığdır */
-    margin: -30px;
-    /* 4. Diğer stiller */
-    min-height: 0;
-}
-
-/* Sadece Purpin kartındaki ana görsel için özel kurallar */
-#purpin .card-main-image {
-    
-    /* 1. Diğer kartlardaki 'auto' kuralını geçersiz kıl. 
-       Metinden sonra 20px boşluk bırak (auto yerine sabit değer). */
-    margin-top: -50px; 
-    
-    /* 2. Diğer kartlardaki 500px'lik sınırı kaldır 
-       veya daha fazla büyümesine izin ver. */
-    max-height: 600px; /* 500px idi, 550px'e çıkardık */
-
-    /* Geri kalan 'align-self: flex-end;' (sağa hizala) gibi kurallar 
-       zaten ana .card-main-image kuralından miras alınır ve çalışır.
-    */
-}
-
-#kulup-card-logo {
-    margin-top: -30px;}
 
 
 
-
-    /* --- 📱 MOBİL EKRAN AYARLARI --- */
-@media (max-width: 768px) {
-
-    /* --- 1. NAVBAR KÜÇÜLTME --- */
-    .navbar {
-        margin-top: 30px; /* Üst boşluğu azalt */
-        padding: 0 20px;  /* Kenar boşluklarını azalt */
-    }
-    
-    .logo img {
-        height: 32px; /* Logoyu küçült (39px idi) */
-    }
-    
-    .nav-links li a {
-        font-size: 13px; /* Yazıyı küçült (14px idi) */
-        margin: 0 10px;  /* Linkler arası boşluğu azalt */
-    }
-
-    /* --- 2. BAŞLIKLARI KÜÇÜLTME --- */
-    .content-wrapper {
-        padding: 0 20px; /* Kenar boşluklarını azalt */
-        margin-top: 40px;
-    }
-    
-    .headline-section h1 {
-        font-size: 32px; /* Ana başlığı küçült (48px idi) */
-    }
-
-    .headline-section p {
-        font-size: 16px; /* Alt başlığı küçült (20px idi) */
-    }
-
-    /* --- 3. KARTLARI KÜÇÜLTME --- */
-    
-    /* Kaydırma alanının kenar boşluklarını azalt */
-    .project-container {
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 15px; /* Kart arası boşluğu azalt (15px idi) */
-    }
-
-    /* Kartların kendisini küçült */
-    .project-card {
-        width: 250px;    /* Kart genişliğini azalt (350px idi) */
-        height: 550px;   /* Kart yüksekliğini azalt (650px idi) */
-        padding: 30px;   /* İç boşluğu azalt (30px idi) */
-    }
-    
-    /* Kart içindeki logo */
-    .project-logo-wrapper {
-        max-height: 70px; /* Logo alanını küçült (80px idi) */
-    }
-    
-    /* Kart içindeki metin */
-    .project-card p {
-        font-size: 16px; /* Metni küçült (14px idi) */
-    }
-    
-    /* Kart içindeki ana görsel */
-    .card-main-image {
-        margin-top: 0px; /* Boşluğu azalt (20px idi) */
-    }
-    
-    /* Purpin kartı için özel kural (mobil) */
-    #purpin .card-main-image {
-        max-height: 420px; /* Mobil için de ayarla (550px idi) */
-    }
-    
-    /* --- 4. SCROLL GÖSTERGESİ (BOX) --- */
-    .scroll-track {
-        height: 9px; /* Kalınlık (9px idi) */
-    }
-}
 
 /* --- 5. YENİ MASONRY GALERİ STİLLERİ (Hizalama Düzeltildi) --- */
 
 /* Galerinin ana kapsayıcısı (Artık %100 genişlikte ve hizalı) */
 .other-works-section {
     width: 100%;
-    margin-top: 20px; /* Sadece üst boşluk */
-    
     /* HİZALAMA İÇİN: content-wrapper ile aynı padding'i ver */
-    padding: 0 50px;
     box-sizing: border-box;
 }
 
 .work-grid {
+margin-top: 40px;
 margin-left: 20%;
 }
 
@@ -351,7 +98,10 @@ margin-left: 20%;
 .work-grid-item {
     width: 75%; 
     box-sizing: border-box;
-    margin-bottom: 0.5%; /* Dikey boşluk */
+
+    /* YENİ: Boşlukları sıfırla */
+    padding: 0; 
+    margin-bottom: 0;
 }
 
 /* Izgara öğesindeki resim */
@@ -392,69 +142,13 @@ margin-left: 20%;
         margin-left: -19.9%;
         
         /* DÜZELTME: 
-           padding: 8px; (her yön) yerine,
-           sadece yatay (sağ/sol) boşluk ver.
+        padding: 8px; (her yön) yerine,
+        sadece yatay (sağ/sol) boşluk ver.
         */
-        padding: 0 4px; /* Üst/Alt: 0, Sağ/Sol: 4px */
 
         /* Dikey boşluğu (satırlar arası) buradan ayarla */
-        margin-bottom: 5px; /* 5px idi, 8px yaptık */
     }
 }
-
-
-/* --- 7. FİLTRE BUTON STİLLERİ --- */
-.filter-controls {
-    /* Üstteki content-wrapper ile hizalı olması için */
-    padding: 0 50px; 
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    margin-left: 6%
-}
-
-.filter-title {
-    font-size: 29px;
-    font-weight: 300;
-    color: #555; /* Görseldeki gibi soluk gri */
-    margin: 0;
-    text-transform: lowercase; /* küçük harf */
-}
-
-.filter-button-group {
-    margin-top: 0px;
-}
-
-.filter-btn {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: #888;
-    background-color: transparent;
-    border: none;
-    
-    padding-top: 5px;
-    padding-bottom: 0px; 
-    
-    /* YENİ EKLENEN SATIRLAR (Yatay boşluğu sıfırlar) */
-    padding-left: 0;
-    padding-right: 0;
-    
-    margin-right: 20px; /* Butonlar arası boşluk buradan sağlanır */
-    cursor: pointer;
-    text-transform: lowercase;
-    transition: color 0.3s;
-}
-
-.filter-btn:hover {
-    color: #000;
-}
-
-/* Aktif olan butonun stili */
-.filter-btn.is-checked {
-border-bottom: 1px solid #000;
-}
-
-
 
 
 /* --- 9. FOOTER STİLLERİ --- */
